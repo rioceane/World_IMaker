@@ -27,7 +27,6 @@ bool SDLWindowManager::isKeyPressed(SDLKey key) const {
     return SDL_GetKeyState(nullptr)[key];
 }
 
-// button can SDL_BUTTON_LEFT, SDL_BUTTON_RIGHT and SDL_BUTTON_MIDDLE
 bool SDLWindowManager::isMouseButtonPressed(uint32_t button) const {
     return SDL_GetMouseState(nullptr, nullptr) & SDL_BUTTON(button);
 }
