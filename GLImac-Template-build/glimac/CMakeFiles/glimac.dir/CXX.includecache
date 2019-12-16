@@ -123,16 +123,10 @@ glimac/Cone.hpp
 /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/glimac/Cone.hpp
 
 /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/Cube.cpp
-cmath
--
-vector
--
 iostream
 -
 cassert
 -
-glimac/common.hpp
-/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/glimac/common.hpp
 glimac/Cube.hpp
 /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/glimac/Cube.hpp
 
