@@ -16,11 +16,11 @@ Cube::Cube() : m_nVertexCount(0) {
 
     //FACE AVANT
     std::vector<ShapeVertexHomo> vertices = face;
-    glm::mat4 transform = glm::translate(glm::mat4(), glm::vec3(0, 0, 0));
+    //glm::mat4 transform = glm::translate(glm::mat4(), glm::vec3(0, 0, 0));
 
-    transformShapeVertexVector(vertices, transform);
+    //transformShapeVertexVector(vertices, transform);
     pushQuadIntoVector(vertices, m_Vertices);
-    m_nVertexCount += 6;
+    m_nVertexCount += 4;
 
    /* //FACE ARRIERE
     vertices = face;
@@ -63,9 +63,9 @@ Cube::Cube() : m_nVertexCount(0) {
     transform = glm::translate(glm::mat4(), glm::vec3(0, 0.5, 0));
     transform = glm::rotate(transform, glm::radians(-90.f), glm::vec3(1, 0, 0));
 */
-    transformShapeVertexVector(vertices, transform);
+    //transformShapeVertexVector(vertices, transform);
     pushQuadIntoVector(vertices, m_Vertices);
-    m_nVertexCount += 6;
+    m_nVertexCount += 4;
 
 }
 
@@ -86,10 +86,12 @@ const std::vector<ShapeVertexHomo> createSquareFace(const float &size) {
     float depth = 0.f;
 
     std::vector<ShapeVertexHomo> vertices = {
-        ShapeVertexHomo(glm::vec4(-size, -size, depth, 1), normal, texture), //Bottom Left
-        ShapeVertexHomo(glm::vec4(-size, size, depth, 1), normal, texture), //Top Left
         ShapeVertexHomo(glm::vec4(size, size, depth, 1), normal, texture), //Top Right
-        ShapeVertexHomo(glm::vec4(size, -size, depth, 1), normal, texture) //Bottom Right
+        ShapeVertexHomo(glm::vec4(-size, size, depth, 1), normal, texture), //Top Left
+        ShapeVertexHomo(glm::vec4(size, -size, depth, 1), normal, texture), //Bottom Right
+        ShapeVertexHomo(glm::vec4(-size, -size, depth, 1), normal, texture) //Bottom Left
+        
+        
     };
 
     return vertices;
