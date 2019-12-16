@@ -189,7 +189,7 @@ using namespace glimac;
 
 int main(int argc, char** argv) {
     // Initialize SDL and open a window
-    SDLWindowManager windowManager(800, 600, "GLImac");
+    SDLWindowManager windowManager(800, 800, "GLImac");
 
     // Initialize glew for OpenGL3+ support
     GLenum glewInitError = glewInit();
@@ -200,8 +200,6 @@ int main(int argc, char** argv) {
 
     std::cout << "OpenGL Version : " << glGetString(GL_VERSION) << std::endl;
     std::cout << "GLEW Version : " << glewGetString(GLEW_VERSION) << std::endl;
-
-    Camera cam; //initialise la caméra
 
     FilePath applicationPath(argv[0]);
     Program program = loadProgram(applicationPath.dirPath() + "shaders/triangle.vs.glsl", applicationPath.dirPath() + "shaders/triangle.fs.glsl");
@@ -221,12 +219,53 @@ int main(int argc, char** argv) {
 
         //Utilisation de notre structure à la place des floats
         Vertex3DColor vertices[] = {
+            // face devant
             Vertex3DColor(glm::vec3(-0.5, 0.5, 0.0), glm::vec3(1, 0, 0)),
             Vertex3DColor(glm::vec3(0.5, 0.5, 0.0), glm::vec3(0, 1, 0)),
             Vertex3DColor(glm::vec3(-0.5, -0.5, 0.0), glm::vec3(0, 0, 1)),
             Vertex3DColor(glm::vec3(0.5, -0.5, 0.0), glm::vec3(1, 0, 0)),
             Vertex3DColor(glm::vec3(0.5, 0.5, 0.0), glm::vec3(0, 1, 0)),
-            Vertex3DColor(glm::vec3(-0.5, -0.5, 0.0), glm::vec3(0, 0, 1))
+            Vertex3DColor(glm::vec3(-0.5, -0.5, 0.0), glm::vec3(0, 0, 1)),
+
+            //face coté gauche
+            Vertex3DColor(glm::vec3(-0.5, 0.5, 0.0), glm::vec3(1, 0, 0)),
+            Vertex3DColor(glm::vec3(-0.5, -0.5, 0.0), glm::vec3(0, 1, 0)),
+            Vertex3DColor(glm::vec3(-0.5, -0.5, -1.0), glm::vec3(0, 0, 1)),
+            Vertex3DColor(glm::vec3(-0.5, 0.5, 0.0), glm::vec3(1, 0, 0)),
+            Vertex3DColor(glm::vec3(-0.5, 0.5, -1.0), glm::vec3(0, 1, 0)),
+            Vertex3DColor(glm::vec3(-0.5, -0.5, -1.0), glm::vec3(0, 0, 1)),
+
+            //face coté droite
+            Vertex3DColor(glm::vec3(0.5, 0.5, 0.0), glm::vec3(1, 0, 0)),
+            Vertex3DColor(glm::vec3(0.5, -0.5, 0.0), glm::vec3(0, 1, 0)),
+            Vertex3DColor(glm::vec3(0.5, -0.5, -1.0), glm::vec3(0, 0, 1)),
+            Vertex3DColor(glm::vec3(0.5, 0.5, 0.0), glm::vec3(1, 0, 0)),
+            Vertex3DColor(glm::vec3(0.5, 0.5, -1.0), glm::vec3(0, 1, 0)),
+            Vertex3DColor(glm::vec3(0.5, -0.5, -1.0), glm::vec3(0, 0, 1)),
+
+            //face dessous
+            Vertex3DColor(glm::vec3(-0.5, -0.5, 0.0), glm::vec3(1, 0, 0)),
+            Vertex3DColor(glm::vec3(0.5, -0.5, 0.0), glm::vec3(0, 1, 0)),
+            Vertex3DColor(glm::vec3(-0.5, -0.5, -1.0), glm::vec3(0, 0, 1)),
+            Vertex3DColor(glm::vec3(0.5, -0.5, 0.0), glm::vec3(1, 0, 0)),
+            Vertex3DColor(glm::vec3(0.5, -0.5, -1.0), glm::vec3(0, 1, 0)),
+            Vertex3DColor(glm::vec3(-0.5, -0.5, -1.0), glm::vec3(0, 0, 1)),
+
+            //face dessus
+            Vertex3DColor(glm::vec3(-0.5, 0.5, 0.0), glm::vec3(1, 0, 0)),
+            Vertex3DColor(glm::vec3(0.5, 0.5, 0.0), glm::vec3(0, 1, 0)),
+            Vertex3DColor(glm::vec3(0.5, 0.5, -1.0), glm::vec3(0, 0, 1)),
+            Vertex3DColor(glm::vec3(-0.5, 0.5, 0.0), glm::vec3(1, 0, 0)),
+            Vertex3DColor(glm::vec3(-0.5, 0.5, -1.0), glm::vec3(0, 1, 0)),
+            Vertex3DColor(glm::vec3(0.5, 0.5, -1.0), glm::vec3(0, 0, 1)),
+
+            //face derrière
+            Vertex3DColor(glm::vec3(-0.5, -0.5, -1.0), glm::vec3(1, 0, 0)),
+            Vertex3DColor(glm::vec3(-0.5, 0.5, -1.0), glm::vec3(0, 1, 0)),
+            Vertex3DColor(glm::vec3(0.5, 0.5, -1.0), glm::vec3(0, 0, 1)),
+            Vertex3DColor(glm::vec3(-0.5, -0.5, -1.0), glm::vec3(1, 0, 0)),
+            Vertex3DColor(glm::vec3(0.5, -0.5, -1.0), glm::vec3(0, 1, 0)),
+            Vertex3DColor(glm::vec3(0.5, 0.5, -1.0), glm::vec3(0, 0, 1))
         };
 
 
@@ -256,17 +295,6 @@ int main(int argc, char** argv) {
     //Débinder VAO 
     glBindVertexArray(0);
 
-    glEnable(GL_DEPTH_TEST);
-
-    glm::mat4 ProjMatrix = glm::perspective(glm::radians(70.f), 600.f/600.f, 0.1f, 100.f);
-
-    glm::ivec2 mouse;
-
-    bool mouseDown = false;
-
-
-
-
     // Application loop:
     bool done = false;
     while(!done) {
@@ -276,38 +304,12 @@ int main(int argc, char** argv) {
             if(e.type == SDL_QUIT) {
                 done = true; // Leave the loop after this iteration
             }
-
-            switch(e.type) {
-                case SDL_KEYDOWN:
-                    if(e.key.keysym.sym == SDLK_UP) cam.rotateUp(1);
-                    if(e.key.keysym.sym == SDLK_DOWN) cam.rotateUp(-1);
-                    break;
-
-                case SDL_MOUSEBUTTONDOWN:
-                    mouseDown = true;
-                    mouse = windowManager.getMousePosition();
-                    break;
-
-                case SDL_MOUSEBUTTONUP:
-                    mouseDown = false;
-                    break;
-
-                case SDL_MOUSEMOTION:
-                    if(mouseDown) {
-                        glm::ivec2 offsetMouse = windowManager.getMousePosition() - mouse;
-                        mouse = windowManager.getMousePosition();
-                        cam.rotateUp(offsetMouse.y/2.f);
-                        cam.rotateLeft(offsetMouse.x/2.f);
-                    }
-                    break;
         }
-    }
 
         /*********************************
          * HERE SHOULD COME THE RENDERING CODE
          *********************************/
-        glm::mat4 viewMatrix = cam.getViewMatrix();
-        
+
         glClear(GL_COLOR_BUFFER_BIT);
         
         glBindVertexArray(vao);

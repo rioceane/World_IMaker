@@ -5,7 +5,7 @@
 
 namespace glimac {
 
-    /*void Cube::createBuffer(){
+    void Cube::createBuffer(){
 
         GLuint vbo; 
         glGenBuffers(1,&vbo);
@@ -45,6 +45,14 @@ namespace glimac {
         glBindVertexArray(0);
 
     }
-*/
+
+
+
+
+
+
+
+
+    
 
 }
