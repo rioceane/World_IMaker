@@ -4,7 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/Camera.cpp" "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build/glimac/CMakeFiles/glimac.dir/src/Camera.cpp.o"
   "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/Cone.cpp" "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build/glimac/CMakeFiles/glimac.dir/src/Cone.cpp.o"
+  "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/Cube.cpp" "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build/glimac/CMakeFiles/glimac.dir/src/Cube.cpp.o"
   "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/Geometry.cpp" "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build/glimac/CMakeFiles/glimac.dir/src/Geometry.cpp.o"
   "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/Image.cpp" "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build/glimac/CMakeFiles/glimac.dir/src/Image.cpp.o"
   "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/Program.cpp" "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build/glimac/CMakeFiles/glimac.dir/src/Program.cpp.o"

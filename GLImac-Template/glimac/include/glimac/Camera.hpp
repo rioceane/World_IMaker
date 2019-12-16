@@ -1,0 +1,19 @@
+#pragma once
+
+#include "glimac/glm.hpp"
+
+class Camera {
+    private:
+        float m_fDistance;
+        float m_fAngleX;
+        float m_fAngleY;
+
+    public:
+        Camera();
+
+        void moveFront(float delta);
+        void rotateLeft(float degrees);
+        void rotateUp(float degrees);
+
+        glm::mat4 getViewMatrix() const;
+};

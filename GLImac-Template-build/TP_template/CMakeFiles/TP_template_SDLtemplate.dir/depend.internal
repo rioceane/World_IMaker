@@ -3,9 +3,15 @@
 
 TP_template/CMakeFiles/TP_template_SDLtemplate.dir/SDLtemplate.cpp.o
  /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/TP_template/SDLtemplate.cpp
+ /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/Camera.hpp
+ /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/Cube.hpp
+ /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/FilePath.hpp
+ /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/Image.hpp
+ /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/Program.hpp
  /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/SDLWindowManager.hpp
+ /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/Shader.hpp
+ /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/common.hpp
  /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/glm.hpp
- /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include/glm/common.hpp
  /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include/glm/detail/_fixes.hpp
  /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include/glm/detail/_swizzle.hpp
  /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include/glm/detail/_swizzle_func.hpp

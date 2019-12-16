@@ -10,7 +10,17 @@
 glm.hpp
 /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/glm.hpp
 
+/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/Camera.hpp
+glimac/glm.hpp
+/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/glimac/glm.hpp
+
 /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/Cone.hpp
+vector
+-
+common.hpp
+/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/common.hpp
+
+/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/Cube.hpp
 vector
 -
 common.hpp
@@ -96,6 +106,10 @@ glm/gtx/io.hpp
 glm/gtc/random.hpp
 -
 
+/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/Camera.cpp
+glimac/Camera.hpp
+/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/glimac/Camera.hpp
+
 /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/Cone.cpp
 cmath
 -
@@ -107,6 +121,20 @@ glimac/common.hpp
 /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/glimac/common.hpp
 glimac/Cone.hpp
 /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/glimac/Cone.hpp
+
+/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/Cube.cpp
+cmath
+-
+vector
+-
+iostream
+-
+cassert
+-
+glimac/common.hpp
+/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/glimac/common.hpp
+glimac/Cube.hpp
+/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/glimac/Cube.hpp
 
 /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/Geometry.cpp
 glimac/Geometry.hpp
