@@ -25,6 +25,14 @@ vector
 -
 common.hpp
 /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/common.hpp
+glimac/glm.hpp
+-
+glimac/Program.hpp
+-
+GL/glew.h
+-
+glimac/Camera.hpp
+-
 
 /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/FilePath.hpp
 string

@@ -197,7 +197,7 @@ ImacGL_BINARY_DIR:STATIC=/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/G
 ImacGL_SOURCE_DIR:STATIC=/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template
 
 //Path to a file.
-OPENGL_EGL_INCLUDE_DIR:PATH=OPENGL_EGL_INCLUDE_DIR-NOTFOUND
+OPENGL_EGL_INCLUDE_DIR:PATH=/usr/include
 
 //Path to a file.
 OPENGL_GLX_INCLUDE_DIR:PATH=/usr/include
