@@ -6,8 +6,9 @@
 #include <glimac/glm.hpp> 
 #include <glimac/Program.hpp>
 #include <GL/glew.h>
-#include <glimac/Camera.hpp>
+//#include <glimac/Camera.hpp>
 
+/*
 namespace glimac
 {
 
@@ -18,7 +19,7 @@ namespace glimac
 			GLuint vbo_c;
 			glm::vec3 position_c; 
 			glm::vec3 color_c; 
-			Camera cam;	
+			//FreeflyCamera camera;	
 	
 		public:
 			GLuint uMVPLoc; //Location
@@ -34,7 +35,35 @@ namespace glimac
 	};
 	
 };
+*/
 
+
+namespace glimac
+{
+
+	class Cube
+	{
+		private:
+			GLuint vao;
+			GLuint vbo;
+			GLuint ibo;
+			glm::vec3 position; 
+			glm::vec3 color; 
+	
+		public:
+			GLuint uMVPLoc; //Location
+			GLuint uMVLoc;
+			GLuint uNormalLoc;	
+
+			Cube();
+			~Cube();
+
+			void createBuffer();
+			void deleteBuffers();
+			void drawCube();
+	};
+	
+};
 
 
 

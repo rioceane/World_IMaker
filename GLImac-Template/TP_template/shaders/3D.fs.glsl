@@ -1,15 +1,6 @@
 #version 330
 
-//IN
-in vec3 vPosition_vs; //View space vertex position
-in vec3 vNormal_vs; //View space vertex normal
-in vec2 vTexCoords; //Vertex texture coords
-
-//Uniforms
-uniform sampler2D uTexture;
-
-out vec3 fFragColor;
-
 void main() {
-    fFragColor = vec3(1,1,1);
+	vec3 color = vec3(0.8, 0.3, 0.1);
+	gl_FragColor = vec4(color,1.0); 
 }

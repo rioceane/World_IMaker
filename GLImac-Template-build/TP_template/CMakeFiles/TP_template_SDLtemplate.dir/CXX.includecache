@@ -11,30 +11,16 @@ glimac/SDLWindowManager.hpp
 -
 GL/glew.h
 -
-glimac/Program.hpp
--
-glimac/FilePath.hpp
--
-glimac/glm.hpp
--
-glimac/Image.hpp
--
 glimac/Cube.hpp
 -
-glimac/Camera.hpp
+glm/gtc/matrix_transform.hpp
 -
-glimac/common.hpp
+glm/glm.hpp
 -
 iostream
 -
 vector
 -
-cstddef
--
-
-/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/Camera.hpp
-glimac/glm.hpp
-/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/glimac/glm.hpp
 
 /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/Cube.hpp
 vector
@@ -47,24 +33,10 @@ glimac/Program.hpp
 -
 GL/glew.h
 -
-glimac/Camera.hpp
--
 
 /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/FilePath.hpp
 string
 -
-
-/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/Image.hpp
-vector
--
-memory
--
-unordered_map
--
-glm.hpp
-/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/glm.hpp
-FilePath.hpp
-/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/FilePath.hpp
 
 /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/Program.hpp
 GL/glew.h

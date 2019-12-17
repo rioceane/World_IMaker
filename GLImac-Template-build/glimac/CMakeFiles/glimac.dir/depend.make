@@ -191,7 +191,6 @@ glimac/CMakeFiles/glimac.dir/src/Cone.cpp.o: /home/oceane/Documents/PROJET_WORLD
 glimac/CMakeFiles/glimac.dir/src/Cone.cpp.o: /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include/glm/vec4.hpp
 glimac/CMakeFiles/glimac.dir/src/Cone.cpp.o: /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include/glm/vector_relational.hpp
 
-glimac/CMakeFiles/glimac.dir/src/Cube.cpp.o: /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/Camera.hpp
 glimac/CMakeFiles/glimac.dir/src/Cube.cpp.o: /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/Cube.hpp
 glimac/CMakeFiles/glimac.dir/src/Cube.cpp.o: /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/FilePath.hpp
 glimac/CMakeFiles/glimac.dir/src/Cube.cpp.o: /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/Program.hpp
