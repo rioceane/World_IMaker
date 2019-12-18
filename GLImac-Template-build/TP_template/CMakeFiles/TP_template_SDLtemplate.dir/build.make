@@ -91,8 +91,6 @@ TP_template_SDLtemplate_EXTERNAL_OBJECTS =
 TP_template/TP_template_SDLtemplate: TP_template/CMakeFiles/TP_template_SDLtemplate.dir/SDLtemplate.cpp.o
 TP_template/TP_template_SDLtemplate: TP_template/CMakeFiles/TP_template_SDLtemplate.dir/build.make
 TP_template/TP_template_SDLtemplate: glimac/libglimac.a
-TP_template/TP_template_SDLtemplate: /usr/lib/x86_64-linux-gnu/libSDLmain.a
-TP_template/TP_template_SDLtemplate: /usr/lib/x86_64-linux-gnu/libSDL.so
 TP_template/TP_template_SDLtemplate: /usr/lib/x86_64-linux-gnu/libGL.so.1
 TP_template/TP_template_SDLtemplate: /usr/lib/x86_64-linux-gnu/libGLEW.so
 TP_template/TP_template_SDLtemplate: libIMGUI.a

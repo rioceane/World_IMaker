@@ -1,17 +1,21 @@
-/*#include <cmath>
-#include <glm/glm.hpp> 
-#include <glimac/Camera.hpp>
+#include "glimac/FreeflyCamera.hpp"
 //#include <include/glm/gtc/matrix_transform.hpp>
-
+#include <math.h>
 
 namespace glimac {
 
   const double PI = 3.141592653589;
   const double HALF_PI = PI/2;
+
   FreeflyCamera::FreeflyCamera()
     : _position(glm::vec3(0.f, 0.f, 0.f)), _fPhi(PI), _fTheta(0)
   {
     computeDirectionVectors();
+  }
+
+  //Destructeur
+  FreeflyCamera::~FreeflyCamera()
+  {
   }
   
   void FreeflyCamera::computeDirectionVectors() {
@@ -65,8 +69,3 @@ namespace glimac {
   }
   
 }
-
-*/
-
-
-

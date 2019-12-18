@@ -19,7 +19,7 @@
 #include <iostream>
 #include <vector>
 #include <cstddef>
-#include "SDL.h"
+//#include "SDL.h"
 
 using namespace glimac;
 
@@ -46,7 +46,7 @@ int main(int argc, char** argv) {
     Program program = loadProgram(applicationPath.dirPath() + "shaders/3D.vs.glsl", applicationPath.dirPath() + "shaders/3D.fs.glsl");
     program.use();
 
-
+/*
     //INIT OVERLAY
     SDL_Window* window;
     SDL_GLContext* glcontext = SDL_GL_CreateContext(window);
@@ -54,7 +54,6 @@ int main(int argc, char** argv) {
     
     //SDL_cond *cond;
     //cond = SDL_CreateCond();
-
 
     // Setup Dear ImGui context
     IMGUI_CHECKVERSION();
@@ -66,10 +65,12 @@ int main(int argc, char** argv) {
     // Setup Dear ImGui style
     ImGui::StyleColorsDark();
 
-
+*/
     /*********************************
      * HERE SHOULD COME THE INITIALIZATION CODE
      *********************************/
+    FreeflyCamera camera;
+
     Cube c;
     c.createBuffer();
 
@@ -78,9 +79,18 @@ int main(int argc, char** argv) {
     // L'envoyer au shader (une fois de plus la ligne suivante n'est valable qu'avec notre template)
    // monShader.setUniformMat4f("u_projMat", matriceDeProjection);
 
-    //Freeflycamera camera;
+    glm::mat4 ProjMatrix = glm::perspective(
+        glm::radians(70.f),
+        800.f/600.f,
+        0.1f,
+        100.f);
+    glm::mat4 MVMatrix = glm::translate(
+        glm::mat4(),
+        glm::vec3(0, 0, -5)
+        );
+    glm::mat4 NormalMatrix = glm::transpose(glm::inverse(MVMatrix));
 
-
+/*
     //application loop
     bool done = false;
     while(!done) {
@@ -90,12 +100,82 @@ int main(int argc, char** argv) {
                 done = true; // Leave the loop after this iteration
             }
         }
+*/
 
+    Glint uMVPMatrix = glGetUniformLocation(program.getGLId(),"uMVPMatrix");
+    Glint uMVMatrix = glGetUniformLocation(program.getGLId(),"uMVMatrix");
+    Glint uNormalMatrix = glGetUniformLocation(program.getGLId(),"uNormalMatrix");
 
+    // Application loop:
+    bool done = false;
+    while(!done) {
+        // Event loop:
+        SDL_Event e;
+        while(windowManager.pollEvent(e)) {
+            if(e.type == SDL_QUIT) {
+                done = true; // Leave the loop after this iteration
+            }
+
+            if(e.type == SDL_KEYDOWN){
+                float speed = 0.1f;
+                switch(e.key.keysym.sym){
+                    /*Z key to move forward*/
+                    case SDLK_z: camera.moveFront(speed);
+                    break;
+                    /*S key to move backward*/
+                    case SDLK_s: camera.moveFront(-speed);
+                    break;
+                    /*Q key to move left*/
+                    case SDLK_q: camera.moveLeft(speed);
+                    break;
+                    /*D key to move right*/
+                    case SDLK_d: camera.moveLeft(-speed);
+                    break;
+
+                    default: break;
+                }
+            }
+            
+            if(e.type== SDL_MOUSEMOTION){
+                float speed = 0.1f;
+                if ( e.motion.xrel != 0 ) {
+                  camera.rotateFront( float(-e.motion.xrel) * speed);
+                }
+                if ( e.motion.yrel != 0 ) {
+                  camera.rotateLeft( float(e.motion.yrel) * speed);
+                }
+                
+            }
+        }
         /*********************************
          * HERE SHOULD COME THE RENDERING CODE *
          *********************************/
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+
+
+        glm::mat4 ViewMatrix = camera.getViewMatrix();
+
+        MVMatrix = MVMatrix * ViewMatrix;
+
+
+        glUniformMatrix4fv(uMVPMatrix,
+            1,
+            GL_FALSE,
+            glm::value_ptr(ProjMatrix*MVMatrix)
+            );
+        glUniformMatrix4fv(uMVMatrix,
+            1,
+            GL_FALSE,
+            glm::value_ptr(MVMatrix)
+            );
+        glUniformMatrix4fv(uNormalMatrix,
+            1,
+            GL_FALSE,
+            glm::value_ptr(NormalMatrix)
+            );
+
+
 
         c.drawCube();
 
@@ -103,10 +183,8 @@ int main(int argc, char** argv) {
         windowManager.swapBuffers();
     }
 
-    
     c.deleteBuffers();
-    SDL_GL_DeleteContext(glcontext);
-    //SDL_GL_UpdateRects(cond);  
+    //SDL_GL_DeleteContext(glcontext); 
 
     return EXIT_SUCCESS;
 }
