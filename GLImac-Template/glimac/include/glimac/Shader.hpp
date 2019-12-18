@@ -2,6 +2,8 @@
 
 #include <GL/glew.h>
 #include <string>
+#include <glm/glm.hpp> //JUlES
+#include <unordered_map> //JUlES
 #include "FilePath.hpp"
 
 #define GLIMAC_SHADER_SRC(str) #str
@@ -38,6 +40,7 @@ public:
 	bool compile();
 
 	const std::string getInfoLog() const;
+
 
 private:
 	Shader(const Shader&);

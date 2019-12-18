@@ -55,6 +55,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/IMGUI.dir/DependInfo.cmake"
   "glimac/CMakeFiles/glimac.dir/DependInfo.cmake"
   "TP_template/CMakeFiles/TP_template_SDLtemplate.dir/DependInfo.cmake"
   )

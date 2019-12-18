@@ -60,6 +60,43 @@ CMAKE_SOURCE_DIR = /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-
 CMAKE_BINARY_DIR = /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build
 
 #=============================================================================
+# Target rules for target CMakeFiles/IMGUI.dir
+
+# All Build rule for target.
+CMakeFiles/IMGUI.dir/all:
+	$(MAKE) -f CMakeFiles/IMGUI.dir/build.make CMakeFiles/IMGUI.dir/depend
+	$(MAKE) -f CMakeFiles/IMGUI.dir/build.make CMakeFiles/IMGUI.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target IMGUI"
+.PHONY : CMakeFiles/IMGUI.dir/all
+
+# Include target in all.
+all: CMakeFiles/IMGUI.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/IMGUI.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/IMGUI.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build/CMakeFiles 0
+.PHONY : CMakeFiles/IMGUI.dir/rule
+
+# Convenience name for target.
+IMGUI: CMakeFiles/IMGUI.dir/rule
+
+.PHONY : IMGUI
+
+# clean rule for target.
+CMakeFiles/IMGUI.dir/clean:
+	$(MAKE) -f CMakeFiles/IMGUI.dir/build.make CMakeFiles/IMGUI.dir/clean
+.PHONY : CMakeFiles/IMGUI.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/IMGUI.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Directory level rules for directory glimac
 
 # Convenience name for "all" pass in the directory.
@@ -84,7 +121,7 @@ glimac/preinstall:
 glimac/CMakeFiles/glimac.dir/all:
 	$(MAKE) -f glimac/CMakeFiles/glimac.dir/build.make glimac/CMakeFiles/glimac.dir/depend
 	$(MAKE) -f glimac/CMakeFiles/glimac.dir/build.make glimac/CMakeFiles/glimac.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11,12,13 "Built target glimac"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build/CMakeFiles --progress-num=9,10,11,12,13,14,15,16,17,18,19,20 "Built target glimac"
 .PHONY : glimac/CMakeFiles/glimac.dir/all
 
 # Include target in all.
@@ -94,7 +131,7 @@ all: glimac/CMakeFiles/glimac.dir/all
 
 # Build rule for subdir invocation for target.
 glimac/CMakeFiles/glimac.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build/CMakeFiles 12
 	$(MAKE) -f CMakeFiles/Makefile2 glimac/CMakeFiles/glimac.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build/CMakeFiles 0
 .PHONY : glimac/CMakeFiles/glimac.dir/rule
@@ -136,10 +173,11 @@ TP_template/preinstall:
 # Target rules for target TP_template/CMakeFiles/TP_template_SDLtemplate.dir
 
 # All Build rule for target.
+TP_template/CMakeFiles/TP_template_SDLtemplate.dir/all: CMakeFiles/IMGUI.dir/all
 TP_template/CMakeFiles/TP_template_SDLtemplate.dir/all: glimac/CMakeFiles/glimac.dir/all
 	$(MAKE) -f TP_template/CMakeFiles/TP_template_SDLtemplate.dir/build.make TP_template/CMakeFiles/TP_template_SDLtemplate.dir/depend
 	$(MAKE) -f TP_template/CMakeFiles/TP_template_SDLtemplate.dir/build.make TP_template/CMakeFiles/TP_template_SDLtemplate.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build/CMakeFiles --progress-num=1,2 "Built target TP_template_SDLtemplate"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build/CMakeFiles --progress-num=7,8 "Built target TP_template_SDLtemplate"
 .PHONY : TP_template/CMakeFiles/TP_template_SDLtemplate.dir/all
 
 # Include target in all.
@@ -149,7 +187,7 @@ all: TP_template/CMakeFiles/TP_template_SDLtemplate.dir/all
 
 # Build rule for subdir invocation for target.
 TP_template/CMakeFiles/TP_template_SDLtemplate.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build/CMakeFiles 20
 	$(MAKE) -f CMakeFiles/Makefile2 TP_template/CMakeFiles/TP_template_SDLtemplate.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build/CMakeFiles 0
 .PHONY : TP_template/CMakeFiles/TP_template_SDLtemplate.dir/rule

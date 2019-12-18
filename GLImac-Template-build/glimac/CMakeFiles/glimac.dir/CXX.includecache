@@ -66,6 +66,22 @@ glm.hpp
 FilePath.hpp
 /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/FilePath.hpp
 
+/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/Overlay.hpp
+iostream
+-
+string
+-
+GL/glew.h
+-
+imgui/imgui.h
+/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/imgui/imgui.h
+imgui/imgui_impl_opengl3.h
+/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/imgui/imgui_impl_opengl3.h
+imgui/imgui_impl_sdl.h
+/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/imgui/imgui_impl_sdl.h
+glm.hpp
+/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/glm.hpp
+
 /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/Program.hpp
 GL/glew.h
 -
@@ -86,6 +102,10 @@ glm.hpp
 GL/glew.h
 -
 string
+-
+glm/glm.hpp
+-
+unordered_map
 -
 FilePath.hpp
 /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/FilePath.hpp
@@ -116,14 +136,6 @@ glm/gtx/io.hpp
 glm/gtc/random.hpp
 -
 
-/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/Camera.cpp
-cmath
--
-glm/glm.hpp
--
-glimac/Camera.hpp
--
-
 /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/Cone.cpp
 cmath
 -
@@ -144,6 +156,12 @@ cassert
 glimac/Cube.hpp
 /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/glimac/Cube.hpp
 
+/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/FreeflyCamera.cpp
+glm/glm.hpp
+-
+glimac/Camera.hpp
+-
+
 /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/Geometry.cpp
 glimac/Geometry.hpp
 /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/glimac/Geometry.hpp
@@ -159,6 +177,12 @@ glimac/Image.hpp
 /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/glimac/Image.hpp
 stb_image.h
 /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/stb_image.h
+iostream
+-
+
+/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/Overlay.cpp
+glimac/Overlay.hpp
+/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/glimac/Overlay.hpp
 iostream
 -
 
@@ -983,4 +1007,28 @@ detail/type_vec4.hpp
 /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include/glm/vector_relational.hpp
 detail/func_vector_relational.hpp
 /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include/glm/detail/func_vector_relational.hpp
+
+/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include/imgui/imconfig.h
+
+/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include/imgui/imgui.h
+imconfig.h
+/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include/imgui/imconfig.h
+float.h
+-
+stdarg.h
+-
+stddef.h
+-
+string.h
+-
+assert.h
+-
+stdint.h
+-
+imgui_user.h
+/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include/imgui/imgui_user.h
+
+/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include/imgui/imgui_impl_opengl3.h
+
+/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include/imgui/imgui_impl_sdl.h
 

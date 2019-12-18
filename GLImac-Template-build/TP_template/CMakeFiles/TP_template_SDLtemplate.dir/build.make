@@ -95,6 +95,7 @@ TP_template/TP_template_SDLtemplate: /usr/lib/x86_64-linux-gnu/libSDLmain.a
 TP_template/TP_template_SDLtemplate: /usr/lib/x86_64-linux-gnu/libSDL.so
 TP_template/TP_template_SDLtemplate: /usr/lib/x86_64-linux-gnu/libGL.so.1
 TP_template/TP_template_SDLtemplate: /usr/lib/x86_64-linux-gnu/libGLEW.so
+TP_template/TP_template_SDLtemplate: libIMGUI.a
 TP_template/TP_template_SDLtemplate: TP_template/CMakeFiles/TP_template_SDLtemplate.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable TP_template_SDLtemplate"
 	cd /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build/TP_template && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TP_template_SDLtemplate.dir/link.txt --verbose=$(VERBOSE)

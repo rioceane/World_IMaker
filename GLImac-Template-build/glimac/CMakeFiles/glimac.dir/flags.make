@@ -6,5 +6,5 @@ CXX_FLAGS =   -std=c++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/include/SDL -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include 
+CXX_INCLUDES = -I/usr/include/SDL -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include/imgui 
 

@@ -38,6 +38,7 @@ namespace glimac
 */
 
 
+
 namespace glimac
 {
 
@@ -64,6 +65,4 @@ namespace glimac
 	};
 	
 };
-
-
 

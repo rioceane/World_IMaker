@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named IMGUI
+
+# Build rule for target.
+IMGUI: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 IMGUI
+.PHONY : IMGUI
+
+# fast build rule for target.
+IMGUI/fast:
+	$(MAKE) -f CMakeFiles/IMGUI.dir/build.make CMakeFiles/IMGUI.dir/build
+.PHONY : IMGUI/fast
+
+#=============================================================================
 # Target rules for targets named glimac
 
 # Build rule for target.
@@ -136,6 +149,141 @@ TP_template_SDLtemplate/fast:
 	$(MAKE) -f TP_template/CMakeFiles/TP_template_SDLtemplate.dir/build.make TP_template/CMakeFiles/TP_template_SDLtemplate.dir/build
 .PHONY : TP_template_SDLtemplate/fast
 
+third-party/include/imgui/imgui.o: third-party/include/imgui/imgui.cpp.o
+
+.PHONY : third-party/include/imgui/imgui.o
+
+# target to build an object file
+third-party/include/imgui/imgui.cpp.o:
+	$(MAKE) -f CMakeFiles/IMGUI.dir/build.make CMakeFiles/IMGUI.dir/third-party/include/imgui/imgui.cpp.o
+.PHONY : third-party/include/imgui/imgui.cpp.o
+
+third-party/include/imgui/imgui.i: third-party/include/imgui/imgui.cpp.i
+
+.PHONY : third-party/include/imgui/imgui.i
+
+# target to preprocess a source file
+third-party/include/imgui/imgui.cpp.i:
+	$(MAKE) -f CMakeFiles/IMGUI.dir/build.make CMakeFiles/IMGUI.dir/third-party/include/imgui/imgui.cpp.i
+.PHONY : third-party/include/imgui/imgui.cpp.i
+
+third-party/include/imgui/imgui.s: third-party/include/imgui/imgui.cpp.s
+
+.PHONY : third-party/include/imgui/imgui.s
+
+# target to generate assembly for a file
+third-party/include/imgui/imgui.cpp.s:
+	$(MAKE) -f CMakeFiles/IMGUI.dir/build.make CMakeFiles/IMGUI.dir/third-party/include/imgui/imgui.cpp.s
+.PHONY : third-party/include/imgui/imgui.cpp.s
+
+third-party/include/imgui/imgui_draw.o: third-party/include/imgui/imgui_draw.cpp.o
+
+.PHONY : third-party/include/imgui/imgui_draw.o
+
+# target to build an object file
+third-party/include/imgui/imgui_draw.cpp.o:
+	$(MAKE) -f CMakeFiles/IMGUI.dir/build.make CMakeFiles/IMGUI.dir/third-party/include/imgui/imgui_draw.cpp.o
+.PHONY : third-party/include/imgui/imgui_draw.cpp.o
+
+third-party/include/imgui/imgui_draw.i: third-party/include/imgui/imgui_draw.cpp.i
+
+.PHONY : third-party/include/imgui/imgui_draw.i
+
+# target to preprocess a source file
+third-party/include/imgui/imgui_draw.cpp.i:
+	$(MAKE) -f CMakeFiles/IMGUI.dir/build.make CMakeFiles/IMGUI.dir/third-party/include/imgui/imgui_draw.cpp.i
+.PHONY : third-party/include/imgui/imgui_draw.cpp.i
+
+third-party/include/imgui/imgui_draw.s: third-party/include/imgui/imgui_draw.cpp.s
+
+.PHONY : third-party/include/imgui/imgui_draw.s
+
+# target to generate assembly for a file
+third-party/include/imgui/imgui_draw.cpp.s:
+	$(MAKE) -f CMakeFiles/IMGUI.dir/build.make CMakeFiles/IMGUI.dir/third-party/include/imgui/imgui_draw.cpp.s
+.PHONY : third-party/include/imgui/imgui_draw.cpp.s
+
+third-party/include/imgui/imgui_impl_opengl3.o: third-party/include/imgui/imgui_impl_opengl3.cpp.o
+
+.PHONY : third-party/include/imgui/imgui_impl_opengl3.o
+
+# target to build an object file
+third-party/include/imgui/imgui_impl_opengl3.cpp.o:
+	$(MAKE) -f CMakeFiles/IMGUI.dir/build.make CMakeFiles/IMGUI.dir/third-party/include/imgui/imgui_impl_opengl3.cpp.o
+.PHONY : third-party/include/imgui/imgui_impl_opengl3.cpp.o
+
+third-party/include/imgui/imgui_impl_opengl3.i: third-party/include/imgui/imgui_impl_opengl3.cpp.i
+
+.PHONY : third-party/include/imgui/imgui_impl_opengl3.i
+
+# target to preprocess a source file
+third-party/include/imgui/imgui_impl_opengl3.cpp.i:
+	$(MAKE) -f CMakeFiles/IMGUI.dir/build.make CMakeFiles/IMGUI.dir/third-party/include/imgui/imgui_impl_opengl3.cpp.i
+.PHONY : third-party/include/imgui/imgui_impl_opengl3.cpp.i
+
+third-party/include/imgui/imgui_impl_opengl3.s: third-party/include/imgui/imgui_impl_opengl3.cpp.s
+
+.PHONY : third-party/include/imgui/imgui_impl_opengl3.s
+
+# target to generate assembly for a file
+third-party/include/imgui/imgui_impl_opengl3.cpp.s:
+	$(MAKE) -f CMakeFiles/IMGUI.dir/build.make CMakeFiles/IMGUI.dir/third-party/include/imgui/imgui_impl_opengl3.cpp.s
+.PHONY : third-party/include/imgui/imgui_impl_opengl3.cpp.s
+
+third-party/include/imgui/imgui_impl_sdl.o: third-party/include/imgui/imgui_impl_sdl.cpp.o
+
+.PHONY : third-party/include/imgui/imgui_impl_sdl.o
+
+# target to build an object file
+third-party/include/imgui/imgui_impl_sdl.cpp.o:
+	$(MAKE) -f CMakeFiles/IMGUI.dir/build.make CMakeFiles/IMGUI.dir/third-party/include/imgui/imgui_impl_sdl.cpp.o
+.PHONY : third-party/include/imgui/imgui_impl_sdl.cpp.o
+
+third-party/include/imgui/imgui_impl_sdl.i: third-party/include/imgui/imgui_impl_sdl.cpp.i
+
+.PHONY : third-party/include/imgui/imgui_impl_sdl.i
+
+# target to preprocess a source file
+third-party/include/imgui/imgui_impl_sdl.cpp.i:
+	$(MAKE) -f CMakeFiles/IMGUI.dir/build.make CMakeFiles/IMGUI.dir/third-party/include/imgui/imgui_impl_sdl.cpp.i
+.PHONY : third-party/include/imgui/imgui_impl_sdl.cpp.i
+
+third-party/include/imgui/imgui_impl_sdl.s: third-party/include/imgui/imgui_impl_sdl.cpp.s
+
+.PHONY : third-party/include/imgui/imgui_impl_sdl.s
+
+# target to generate assembly for a file
+third-party/include/imgui/imgui_impl_sdl.cpp.s:
+	$(MAKE) -f CMakeFiles/IMGUI.dir/build.make CMakeFiles/IMGUI.dir/third-party/include/imgui/imgui_impl_sdl.cpp.s
+.PHONY : third-party/include/imgui/imgui_impl_sdl.cpp.s
+
+third-party/include/imgui/imgui_widgets.o: third-party/include/imgui/imgui_widgets.cpp.o
+
+.PHONY : third-party/include/imgui/imgui_widgets.o
+
+# target to build an object file
+third-party/include/imgui/imgui_widgets.cpp.o:
+	$(MAKE) -f CMakeFiles/IMGUI.dir/build.make CMakeFiles/IMGUI.dir/third-party/include/imgui/imgui_widgets.cpp.o
+.PHONY : third-party/include/imgui/imgui_widgets.cpp.o
+
+third-party/include/imgui/imgui_widgets.i: third-party/include/imgui/imgui_widgets.cpp.i
+
+.PHONY : third-party/include/imgui/imgui_widgets.i
+
+# target to preprocess a source file
+third-party/include/imgui/imgui_widgets.cpp.i:
+	$(MAKE) -f CMakeFiles/IMGUI.dir/build.make CMakeFiles/IMGUI.dir/third-party/include/imgui/imgui_widgets.cpp.i
+.PHONY : third-party/include/imgui/imgui_widgets.cpp.i
+
+third-party/include/imgui/imgui_widgets.s: third-party/include/imgui/imgui_widgets.cpp.s
+
+.PHONY : third-party/include/imgui/imgui_widgets.s
+
+# target to generate assembly for a file
+third-party/include/imgui/imgui_widgets.cpp.s:
+	$(MAKE) -f CMakeFiles/IMGUI.dir/build.make CMakeFiles/IMGUI.dir/third-party/include/imgui/imgui_widgets.cpp.s
+.PHONY : third-party/include/imgui/imgui_widgets.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -143,9 +291,25 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... IMGUI"
 	@echo "... edit_cache"
 	@echo "... glimac"
 	@echo "... TP_template_SDLtemplate"
+	@echo "... third-party/include/imgui/imgui.o"
+	@echo "... third-party/include/imgui/imgui.i"
+	@echo "... third-party/include/imgui/imgui.s"
+	@echo "... third-party/include/imgui/imgui_draw.o"
+	@echo "... third-party/include/imgui/imgui_draw.i"
+	@echo "... third-party/include/imgui/imgui_draw.s"
+	@echo "... third-party/include/imgui/imgui_impl_opengl3.o"
+	@echo "... third-party/include/imgui/imgui_impl_opengl3.i"
+	@echo "... third-party/include/imgui/imgui_impl_opengl3.s"
+	@echo "... third-party/include/imgui/imgui_impl_sdl.o"
+	@echo "... third-party/include/imgui/imgui_impl_sdl.i"
+	@echo "... third-party/include/imgui/imgui_impl_sdl.s"
+	@echo "... third-party/include/imgui/imgui_widgets.o"
+	@echo "... third-party/include/imgui/imgui_widgets.i"
+	@echo "... third-party/include/imgui/imgui_widgets.s"
 .PHONY : help
 
 

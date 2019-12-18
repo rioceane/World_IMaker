@@ -125,33 +125,6 @@ glimac/fast:
 	cd /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build && $(MAKE) -f glimac/CMakeFiles/glimac.dir/build.make glimac/CMakeFiles/glimac.dir/build
 .PHONY : glimac/fast
 
-src/Camera.o: src/Camera.cpp.o
-
-.PHONY : src/Camera.o
-
-# target to build an object file
-src/Camera.cpp.o:
-	cd /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build && $(MAKE) -f glimac/CMakeFiles/glimac.dir/build.make glimac/CMakeFiles/glimac.dir/src/Camera.cpp.o
-.PHONY : src/Camera.cpp.o
-
-src/Camera.i: src/Camera.cpp.i
-
-.PHONY : src/Camera.i
-
-# target to preprocess a source file
-src/Camera.cpp.i:
-	cd /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build && $(MAKE) -f glimac/CMakeFiles/glimac.dir/build.make glimac/CMakeFiles/glimac.dir/src/Camera.cpp.i
-.PHONY : src/Camera.cpp.i
-
-src/Camera.s: src/Camera.cpp.s
-
-.PHONY : src/Camera.s
-
-# target to generate assembly for a file
-src/Camera.cpp.s:
-	cd /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build && $(MAKE) -f glimac/CMakeFiles/glimac.dir/build.make glimac/CMakeFiles/glimac.dir/src/Camera.cpp.s
-.PHONY : src/Camera.cpp.s
-
 src/Cone.o: src/Cone.cpp.o
 
 .PHONY : src/Cone.o
@@ -206,6 +179,33 @@ src/Cube.cpp.s:
 	cd /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build && $(MAKE) -f glimac/CMakeFiles/glimac.dir/build.make glimac/CMakeFiles/glimac.dir/src/Cube.cpp.s
 .PHONY : src/Cube.cpp.s
 
+src/FreeflyCamera.o: src/FreeflyCamera.cpp.o
+
+.PHONY : src/FreeflyCamera.o
+
+# target to build an object file
+src/FreeflyCamera.cpp.o:
+	cd /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build && $(MAKE) -f glimac/CMakeFiles/glimac.dir/build.make glimac/CMakeFiles/glimac.dir/src/FreeflyCamera.cpp.o
+.PHONY : src/FreeflyCamera.cpp.o
+
+src/FreeflyCamera.i: src/FreeflyCamera.cpp.i
+
+.PHONY : src/FreeflyCamera.i
+
+# target to preprocess a source file
+src/FreeflyCamera.cpp.i:
+	cd /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build && $(MAKE) -f glimac/CMakeFiles/glimac.dir/build.make glimac/CMakeFiles/glimac.dir/src/FreeflyCamera.cpp.i
+.PHONY : src/FreeflyCamera.cpp.i
+
+src/FreeflyCamera.s: src/FreeflyCamera.cpp.s
+
+.PHONY : src/FreeflyCamera.s
+
+# target to generate assembly for a file
+src/FreeflyCamera.cpp.s:
+	cd /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build && $(MAKE) -f glimac/CMakeFiles/glimac.dir/build.make glimac/CMakeFiles/glimac.dir/src/FreeflyCamera.cpp.s
+.PHONY : src/FreeflyCamera.cpp.s
+
 src/Geometry.o: src/Geometry.cpp.o
 
 .PHONY : src/Geometry.o
@@ -259,6 +259,33 @@ src/Image.s: src/Image.cpp.s
 src/Image.cpp.s:
 	cd /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build && $(MAKE) -f glimac/CMakeFiles/glimac.dir/build.make glimac/CMakeFiles/glimac.dir/src/Image.cpp.s
 .PHONY : src/Image.cpp.s
+
+src/Overlay.o: src/Overlay.cpp.o
+
+.PHONY : src/Overlay.o
+
+# target to build an object file
+src/Overlay.cpp.o:
+	cd /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build && $(MAKE) -f glimac/CMakeFiles/glimac.dir/build.make glimac/CMakeFiles/glimac.dir/src/Overlay.cpp.o
+.PHONY : src/Overlay.cpp.o
+
+src/Overlay.i: src/Overlay.cpp.i
+
+.PHONY : src/Overlay.i
+
+# target to preprocess a source file
+src/Overlay.cpp.i:
+	cd /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build && $(MAKE) -f glimac/CMakeFiles/glimac.dir/build.make glimac/CMakeFiles/glimac.dir/src/Overlay.cpp.i
+.PHONY : src/Overlay.cpp.i
+
+src/Overlay.s: src/Overlay.cpp.s
+
+.PHONY : src/Overlay.s
+
+# target to generate assembly for a file
+src/Overlay.cpp.s:
+	cd /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build && $(MAKE) -f glimac/CMakeFiles/glimac.dir/build.make glimac/CMakeFiles/glimac.dir/src/Overlay.cpp.s
+.PHONY : src/Overlay.cpp.s
 
 src/Program.o: src/Program.cpp.o
 
@@ -404,21 +431,24 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... glimac"
 	@echo "... edit_cache"
-	@echo "... src/Camera.o"
-	@echo "... src/Camera.i"
-	@echo "... src/Camera.s"
 	@echo "... src/Cone.o"
 	@echo "... src/Cone.i"
 	@echo "... src/Cone.s"
 	@echo "... src/Cube.o"
 	@echo "... src/Cube.i"
 	@echo "... src/Cube.s"
+	@echo "... src/FreeflyCamera.o"
+	@echo "... src/FreeflyCamera.i"
+	@echo "... src/FreeflyCamera.s"
 	@echo "... src/Geometry.o"
 	@echo "... src/Geometry.i"
 	@echo "... src/Geometry.s"
 	@echo "... src/Image.o"
 	@echo "... src/Image.i"
 	@echo "... src/Image.s"
+	@echo "... src/Overlay.o"
+	@echo "... src/Overlay.i"
+	@echo "... src/Overlay.s"
 	@echo "... src/Program.o"
 	@echo "... src/Program.i"
 	@echo "... src/Program.s"

@@ -190,6 +190,9 @@ GLEW_INCLUDE_PATH:PATH=/usr/include
 //The GLEW library
 GLEW_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libGLEW.so
 
+//Dependencies for target
+IMGUI_LIB_DEPENDS:STATIC=
+
 //Value Computed by CMake
 ImacGL_BINARY_DIR:STATIC=/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build
 
@@ -234,6 +237,9 @@ SDL_LIBRARY:STRING=/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-
 
 //Dependencies for target
 glimac_LIB_DEPENDS:STATIC=
+
+//Dependencies for target
+imgui_LIB_DEPENDS:STATIC=
 
 
 ########################

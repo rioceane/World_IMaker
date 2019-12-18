@@ -5,6 +5,8 @@
 #include <string>
 #include <sstream>
 
+
+
 namespace glimac {
 
 bool Shader::compile() {

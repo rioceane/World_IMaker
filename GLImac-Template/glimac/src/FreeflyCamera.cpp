@@ -1,4 +1,4 @@
-#include <cmath>
+/*#include <cmath>
 #include <glm/glm.hpp> 
 #include <glimac/Camera.hpp>
 //#include <include/glm/gtc/matrix_transform.hpp>
@@ -65,6 +65,8 @@ namespace glimac {
   }
   
 }
+
+*/
 
 
 
