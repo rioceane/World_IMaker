@@ -4,10 +4,10 @@
 TP_template/CMakeFiles/TP_template_SDLtemplate.dir/SDLtemplate.cpp.o
  /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/TP_template/SDLtemplate.cpp
  /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/Cube.hpp
+ /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/Curseur.hpp
  /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/FilePath.hpp
  /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/FreeflyCamera.hpp
  /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/Image.hpp
- /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/Overlay.hpp
  /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/Program.hpp
  /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/SDLWindowManager.hpp
  /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/Shader.hpp

@@ -25,8 +25,8 @@ glimac/FreeflyCamera.hpp
 /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/TP_template/glimac/FreeflyCamera.hpp
 glimac/common.hpp
 /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/TP_template/glimac/common.hpp
-glimac/Overlay.hpp
-/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/TP_template/glimac/Overlay.hpp
+glimac/Curseur.hpp
+/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/TP_template/glimac/Curseur.hpp
 glm/gtc/matrix_transform.hpp
 -
 imgui/imgui.h
@@ -50,12 +50,20 @@ cstddef
 vector
 -
 glimac/common.hpp
--
+/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/glimac/common.hpp
 glimac/glm.hpp
--
+/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/glimac/glm.hpp
 glimac/Program.hpp
--
+/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/glimac/Program.hpp
 GL/glew.h
+-
+
+/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/Curseur.hpp
+glm/glm.hpp
+-
+glimac/Cube.hpp
+/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/glimac/Cube.hpp
+vector
 -
 
 /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/FilePath.hpp
@@ -69,6 +77,8 @@ cmath
 -
 glm/glm.hpp
 -
+iostream
+-
 
 /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/Image.hpp
 vector
@@ -81,22 +91,6 @@ glm.hpp
 /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/glm.hpp
 FilePath.hpp
 /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/FilePath.hpp
-
-/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/Overlay.hpp
-iostream
--
-string
--
-GL/glew.h
--
-imgui/imgui.h
-/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/imgui/imgui.h
-imgui/imgui_impl_opengl3.h
-/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/imgui/imgui_impl_opengl3.h
-imgui/imgui_impl_sdl.h
-/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/imgui/imgui_impl_sdl.h
-glm.hpp
-/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/glm.hpp
 
 /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/Program.hpp
 GL/glew.h

@@ -7,7 +7,7 @@ namespace glimac {
 
     // Constructeur
     Cube::Cube() 
-    : vbo(0), vao(0), position(glm::vec3(0,0,0)), color(glm::vec3(0.0,0.0,0.5)) {}
+    : vbo(0), vao(0),ibo(0), position(glm::vec3(0,0,0)), color(glm::vec3(0.0,0.0,0.5)) {}
    
     //Destructeur
     Cube::~Cube()
@@ -94,7 +94,6 @@ namespace glimac {
     }
 
 
-
    void Cube::drawCube()
     {       
         glBindVertexArray(vao);
@@ -118,57 +117,10 @@ namespace glimac {
         glDeleteVertexArrays(1, &vao);
     }
 
+
+    glm::vec3 Cube::getPositionCube() const
+    {
+        return position;
+    }
+
 }
-
-
-/*
-   Vertex3DColor vertices[] = {
-                        // face devant
-                        Vertex3DColor(glm::vec3(-0.5, 0.5, 0.0), glm::vec3(1, 0, 0)),
-                        Vertex3DColor(glm::vec3(0.5, 0.5, 0.0), glm::vec3(0, 1, 0)),
-                        Vertex3DColor(glm::vec3(-0.5, -0.5, 0.0), glm::vec3(0, 0, 1)),
-                        Vertex3DColor(glm::vec3(0.5, -0.5, 0.0), glm::vec3(1, 0, 0)),
-                        Vertex3DColor(glm::vec3(0.5, 0.5, 0.0), glm::vec3(0, 1, 0)),
-                        Vertex3DColor(glm::vec3(-0.5, -0.5, 0.0), glm::vec3(0, 0, 1)),
-
-                        //face coté gauche
-                        Vertex3DColor(glm::vec3(-0.5, 0.5, 0.0), glm::vec3(1, 0, 0)),
-                        Vertex3DColor(glm::vec3(-0.5, -0.5, 0.0), glm::vec3(0, 1, 0)),
-                        Vertex3DColor(glm::vec3(-0.5, -0.5, -1.0), glm::vec3(0, 0, 1)),
-                        Vertex3DColor(glm::vec3(-0.5, 0.5, 0.0), glm::vec3(1, 0, 0)),
-                        Vertex3DColor(glm::vec3(-0.5, 0.5, -1.0), glm::vec3(0, 1, 0)),
-                        Vertex3DColor(glm::vec3(-0.5, -0.5, -1.0), glm::vec3(0, 0, 1)),
-
-                        //face coté droite
-                        Vertex3DColor(glm::vec3(0.5, 0.5, 0.0), glm::vec3(1, 0, 0)),
-                        Vertex3DColor(glm::vec3(0.5, -0.5, 0.0), glm::vec3(0, 1, 0)),
-                        Vertex3DColor(glm::vec3(0.5, -0.5, -1.0), glm::vec3(0, 0, 1)),
-                        Vertex3DColor(glm::vec3(0.5, 0.5, 0.0), glm::vec3(1, 0, 0)),
-                        Vertex3DColor(glm::vec3(0.5, 0.5, -1.0), glm::vec3(0, 1, 0)),
-                        Vertex3DColor(glm::vec3(0.5, -0.5, -1.0), glm::vec3(0, 0, 1)),
-
-                        //face dessous
-                        Vertex3DColor(glm::vec3(-0.5, -0.5, 0.0), glm::vec3(1, 0, 0)),
-                        Vertex3DColor(glm::vec3(0.5, -0.5, 0.0), glm::vec3(0, 1, 0)),
-                        Vertex3DColor(glm::vec3(-0.5, -0.5, -1.0), glm::vec3(0, 0, 1)),
-                        Vertex3DColor(glm::vec3(0.5, -0.5, 0.0), glm::vec3(1, 0, 0)),
-                        Vertex3DColor(glm::vec3(0.5, -0.5, -1.0), glm::vec3(0, 1, 0)),
-                        Vertex3DColor(glm::vec3(-0.5, -0.5, -1.0), glm::vec3(0, 0, 1)),
-
-                        //face dessus
-                        Vertex3DColor(glm::vec3(-0.5, 0.5, 0.0), glm::vec3(1, 0, 0)),
-                        Vertex3DColor(glm::vec3(0.5, 0.5, 0.0), glm::vec3(0, 1, 0)),
-                        Vertex3DColor(glm::vec3(0.5, 0.5, -1.0), glm::vec3(0, 0, 1)),
-                        Vertex3DColor(glm::vec3(-0.5, 0.5, 0.0), glm::vec3(1, 0, 0)),
-                        Vertex3DColor(glm::vec3(-0.5, 0.5, -1.0), glm::vec3(0, 1, 0)),
-                        Vertex3DColor(glm::vec3(0.5, 0.5, -1.0), glm::vec3(0, 0, 1)),
-
-                        //face derrière
-                        Vertex3DColor(glm::vec3(-0.5, -0.5, -1.0), glm::vec3(1, 0, 0)),
-                        Vertex3DColor(glm::vec3(-0.5, 0.5, -1.0), glm::vec3(0, 1, 0)),
-                        Vertex3DColor(glm::vec3(0.5, 0.5, -1.0), glm::vec3(0, 0, 1)),
-                        Vertex3DColor(glm::vec3(-0.5, -0.5, -1.0), glm::vec3(1, 0, 0)),
-                        Vertex3DColor(glm::vec3(0.5, -0.5, -1.0), glm::vec3(0, 1, 0)),
-                        Vertex3DColor(glm::vec3(0.5, 0.5, -1.0), glm::vec3(0, 0, 1))
-                    };
-*/

@@ -8,7 +8,7 @@ namespace glimac {
   const double HALF_PI = PI/2;
 
   FreeflyCamera::FreeflyCamera()
-    : _position(glm::vec3(0.f, 0.f, 0.f)), _fPhi(PI), _fTheta(0)
+    : _position(glm::vec3(0.f, 0.f, 10.f)), _fPhi(PI), _fTheta(0)
   {
     computeDirectionVectors();
   }

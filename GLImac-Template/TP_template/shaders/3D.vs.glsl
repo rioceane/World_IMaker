@@ -1,15 +1,3 @@
-/*#version 330
-
-layout (location = 0) in vec3 aPositionSommet; 
-//uniform mat4 u_projMat = glm::infinitePerspective(1.0f, 1, 0.1f);
-
-void main() {
-	// gl_Position est une variable d'OpenGL que le vertexShader doit remplir pour expliquer où va le sommet
-	//gl_Position = u_projMat*vec4(aPositionSommet, 1.0);
-	gl_Position = vec4(aPositionSommet, 1.0);
-}
-*/
-
 #version 330
 
 layout(location = 0) in vec3 aVertexPosition;
@@ -25,9 +13,11 @@ uniform mat4 uMVMatrix;
 uniform mat4 uNormalMatrix;
 
 void main() {
+	//calculs des valeurs de sortie
 	vPosition = vec3(uMVMatrix*vec4(aVertexPosition, 1));
 	vNormale = vec3(uNormalMatrix*vec4(aVertexNormal, 0));
 	vtexCoords = aTexCoord;
 
+	//calcul de la position projetée
     gl_Position = uMVPMatrix * vec4(aVertexPosition, 1);
 }

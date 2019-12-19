@@ -125,33 +125,6 @@ glimac/fast:
 	cd /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build && $(MAKE) -f glimac/CMakeFiles/glimac.dir/build.make glimac/CMakeFiles/glimac.dir/build
 .PHONY : glimac/fast
 
-src/Cone.o: src/Cone.cpp.o
-
-.PHONY : src/Cone.o
-
-# target to build an object file
-src/Cone.cpp.o:
-	cd /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build && $(MAKE) -f glimac/CMakeFiles/glimac.dir/build.make glimac/CMakeFiles/glimac.dir/src/Cone.cpp.o
-.PHONY : src/Cone.cpp.o
-
-src/Cone.i: src/Cone.cpp.i
-
-.PHONY : src/Cone.i
-
-# target to preprocess a source file
-src/Cone.cpp.i:
-	cd /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build && $(MAKE) -f glimac/CMakeFiles/glimac.dir/build.make glimac/CMakeFiles/glimac.dir/src/Cone.cpp.i
-.PHONY : src/Cone.cpp.i
-
-src/Cone.s: src/Cone.cpp.s
-
-.PHONY : src/Cone.s
-
-# target to generate assembly for a file
-src/Cone.cpp.s:
-	cd /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build && $(MAKE) -f glimac/CMakeFiles/glimac.dir/build.make glimac/CMakeFiles/glimac.dir/src/Cone.cpp.s
-.PHONY : src/Cone.cpp.s
-
 src/Cube.o: src/Cube.cpp.o
 
 .PHONY : src/Cube.o
@@ -178,6 +151,33 @@ src/Cube.s: src/Cube.cpp.s
 src/Cube.cpp.s:
 	cd /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build && $(MAKE) -f glimac/CMakeFiles/glimac.dir/build.make glimac/CMakeFiles/glimac.dir/src/Cube.cpp.s
 .PHONY : src/Cube.cpp.s
+
+src/Curseur.o: src/Curseur.cpp.o
+
+.PHONY : src/Curseur.o
+
+# target to build an object file
+src/Curseur.cpp.o:
+	cd /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build && $(MAKE) -f glimac/CMakeFiles/glimac.dir/build.make glimac/CMakeFiles/glimac.dir/src/Curseur.cpp.o
+.PHONY : src/Curseur.cpp.o
+
+src/Curseur.i: src/Curseur.cpp.i
+
+.PHONY : src/Curseur.i
+
+# target to preprocess a source file
+src/Curseur.cpp.i:
+	cd /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build && $(MAKE) -f glimac/CMakeFiles/glimac.dir/build.make glimac/CMakeFiles/glimac.dir/src/Curseur.cpp.i
+.PHONY : src/Curseur.cpp.i
+
+src/Curseur.s: src/Curseur.cpp.s
+
+.PHONY : src/Curseur.s
+
+# target to generate assembly for a file
+src/Curseur.cpp.s:
+	cd /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build && $(MAKE) -f glimac/CMakeFiles/glimac.dir/build.make glimac/CMakeFiles/glimac.dir/src/Curseur.cpp.s
+.PHONY : src/Curseur.cpp.s
 
 src/FreeflyCamera.o: src/FreeflyCamera.cpp.o
 
@@ -368,33 +368,6 @@ src/Shader.cpp.s:
 	cd /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build && $(MAKE) -f glimac/CMakeFiles/glimac.dir/build.make glimac/CMakeFiles/glimac.dir/src/Shader.cpp.s
 .PHONY : src/Shader.cpp.s
 
-src/Sphere.o: src/Sphere.cpp.o
-
-.PHONY : src/Sphere.o
-
-# target to build an object file
-src/Sphere.cpp.o:
-	cd /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build && $(MAKE) -f glimac/CMakeFiles/glimac.dir/build.make glimac/CMakeFiles/glimac.dir/src/Sphere.cpp.o
-.PHONY : src/Sphere.cpp.o
-
-src/Sphere.i: src/Sphere.cpp.i
-
-.PHONY : src/Sphere.i
-
-# target to preprocess a source file
-src/Sphere.cpp.i:
-	cd /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build && $(MAKE) -f glimac/CMakeFiles/glimac.dir/build.make glimac/CMakeFiles/glimac.dir/src/Sphere.cpp.i
-.PHONY : src/Sphere.cpp.i
-
-src/Sphere.s: src/Sphere.cpp.s
-
-.PHONY : src/Sphere.s
-
-# target to generate assembly for a file
-src/Sphere.cpp.s:
-	cd /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build && $(MAKE) -f glimac/CMakeFiles/glimac.dir/build.make glimac/CMakeFiles/glimac.dir/src/Sphere.cpp.s
-.PHONY : src/Sphere.cpp.s
-
 src/tiny_obj_loader.o: src/tiny_obj_loader.cpp.o
 
 .PHONY : src/tiny_obj_loader.o
@@ -431,12 +404,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... glimac"
 	@echo "... edit_cache"
-	@echo "... src/Cone.o"
-	@echo "... src/Cone.i"
-	@echo "... src/Cone.s"
 	@echo "... src/Cube.o"
 	@echo "... src/Cube.i"
 	@echo "... src/Cube.s"
+	@echo "... src/Curseur.o"
+	@echo "... src/Curseur.i"
+	@echo "... src/Curseur.s"
 	@echo "... src/FreeflyCamera.o"
 	@echo "... src/FreeflyCamera.i"
 	@echo "... src/FreeflyCamera.s"
@@ -458,9 +431,6 @@ help:
 	@echo "... src/Shader.o"
 	@echo "... src/Shader.i"
 	@echo "... src/Shader.s"
-	@echo "... src/Sphere.o"
-	@echo "... src/Sphere.i"
-	@echo "... src/Sphere.s"
 	@echo "... src/tiny_obj_loader.o"
 	@echo "... src/tiny_obj_loader.i"
 	@echo "... src/tiny_obj_loader.s"

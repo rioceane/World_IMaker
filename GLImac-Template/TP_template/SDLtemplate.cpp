@@ -7,7 +7,7 @@
 #include "glimac/Cube.hpp"
 #include "glimac/FreeflyCamera.hpp"
 #include "glimac/common.hpp"
-#include "glimac/Overlay.hpp"
+#include "glimac/Curseur.hpp"
 #include <glm/gtc/matrix_transform.hpp>
 
 #include "imgui/imgui.h"
@@ -30,6 +30,9 @@ int main(int argc, char** argv) {
 
     SDLWindowManager windowManager(WINDOW_WIDTH, WINDOW_HEIGHT, "Word IMaker");
 
+    // couleur fenêtre
+    glClearColor(200.0 / 255, 200.0 / 255, 200.0 / 255, 1);
+
     // Initialize glew for OpenGL3+ support
     GLenum glewInitError = glewInit();
     if(GLEW_OK != glewInitError) {
@@ -46,65 +49,34 @@ int main(int argc, char** argv) {
     Program program = loadProgram(applicationPath.dirPath() + "shaders/3D.vs.glsl", applicationPath.dirPath() + "shaders/3D.fs.glsl");
     program.use();
 
-/*
-    //INIT OVERLAY
-    SDL_Window* window;
-    SDL_GLContext* glcontext = SDL_GL_CreateContext(window);
-    //ImGuiContext* cl_context = SDL_CreateCond(window);
-    
-    //SDL_cond *cond;
-    //cond = SDL_CreateCond();
-
-    // Setup Dear ImGui context
-    IMGUI_CHECKVERSION();
-    ImGui::CreateContext();
-    ImGuiIO &io = ImGui::GetIO();
-    // Setup Platform/Renderer bindings
-    ImGui_ImplSDL2_InitForOpenGL(window, glcontext);
-    ImGui_ImplOpenGL3_Init("#version 330 core");
-    // Setup Dear ImGui style
-    ImGui::StyleColorsDark();
-
-*/
     /*********************************
      * HERE SHOULD COME THE INITIALIZATION CODE
      *********************************/
+
+    //creation caméra
     FreeflyCamera camera;
 
+    GLint uMVPMatrix = glGetUniformLocation(program.getGLId(),"uMVPMatrix");
+    GLint uMVMatrix = glGetUniformLocation(program.getGLId(),"uMVMatrix");
+    GLint uNormalMatrix = glGetUniformLocation(program.getGLId(),"uNormalMatrix");
+
+    //création cube
     Cube c;
     c.createBuffer();
 
-    // Créer la matrice
-    //glm::mat4 matriceDeProjection = glm::infinitePerspective(1.0f, 1, 0.1f); // 1 = rapport largeur/hauteur de la fenetre
-    // L'envoyer au shader (une fois de plus la ligne suivante n'est valable qu'avec notre template)
-   // monShader.setUniformMat4f("u_projMat", matriceDeProjection);
+    //creation du curseur
+    Curseur curseur;
 
+    glEnable(GL_DEPTH_TEST);
+
+
+    //Matrices de projection
     glm::mat4 ProjMatrix = glm::perspective(
         glm::radians(70.f),
         800.f/600.f,
         0.1f,
         100.f);
-    glm::mat4 MVMatrix = glm::translate(
-        glm::mat4(),
-        glm::vec3(0, 0, -5)
-        );
-    glm::mat4 NormalMatrix = glm::transpose(glm::inverse(MVMatrix));
 
-/*
-    //application loop
-    bool done = false;
-    while(!done) {
-        SDL_Event e;
-        while (windowManager.pollEvent(e)) {
-            if(e.type == SDL_QUIT) {
-                done = true; // Leave the loop after this iteration
-            }
-        }
-*/
-
-    Glint uMVPMatrix = glGetUniformLocation(program.getGLId(),"uMVPMatrix");
-    Glint uMVMatrix = glGetUniformLocation(program.getGLId(),"uMVMatrix");
-    Glint uNormalMatrix = glGetUniformLocation(program.getGLId(),"uNormalMatrix");
 
     // Application loop:
     bool done = false;
@@ -117,7 +89,7 @@ int main(int argc, char** argv) {
             }
 
             if(e.type == SDL_KEYDOWN){
-                float speed = 0.1f;
+                float speed = 1.f;
                 switch(e.key.keysym.sym){
                     /*Z key to move forward*/
                     case SDLK_z: camera.moveFront(speed);
@@ -134,56 +106,41 @@ int main(int argc, char** argv) {
 
                     default: break;
                 }
-            }
-            
+            }    
+
             if(e.type== SDL_MOUSEMOTION){
                 float speed = 0.1f;
-                if ( e.motion.xrel != 0 ) {
                   camera.rotateFront( float(-e.motion.xrel) * speed);
-                }
-                if ( e.motion.yrel != 0 ) {
                   camera.rotateLeft( float(e.motion.yrel) * speed);
-                }
                 
             }
         }
+
+
         /*********************************
          * HERE SHOULD COME THE RENDERING CODE *
          *********************************/
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
+        // changement matrice (caméra)
+        glm::mat4 MVMatrix = camera.getViewMatrix();
+        glm::mat4 NormalMatrix = glm::transpose(glm::inverse(MVMatrix));
+        glUniformMatrix4fv(uMVPMatrix,1,GL_FALSE,glm::value_ptr(ProjMatrix*MVMatrix));
+        glUniformMatrix4fv(uMVMatrix,1,GL_FALSE,glm::value_ptr(MVMatrix));
+        glUniformMatrix4fv(uNormalMatrix,1,GL_FALSE,glm::value_ptr(NormalMatrix));
 
-
-        glm::mat4 ViewMatrix = camera.getViewMatrix();
-
-        MVMatrix = MVMatrix * ViewMatrix;
-
-
-        glUniformMatrix4fv(uMVPMatrix,
-            1,
-            GL_FALSE,
-            glm::value_ptr(ProjMatrix*MVMatrix)
-            );
-        glUniformMatrix4fv(uMVMatrix,
-            1,
-            GL_FALSE,
-            glm::value_ptr(MVMatrix)
-            );
-        glUniformMatrix4fv(uNormalMatrix,
-            1,
-            GL_FALSE,
-            glm::value_ptr(NormalMatrix)
-            );
-
-
-
+        // dessiner le cube
         c.drawCube();
+
+        //curseur.drawCurseur(curseur);
 
         // Update the display
         windowManager.swapBuffers();
     }
 
+    //liberer les buffers
     c.deleteBuffers();
+    //curseur.liberateCurseur(curseur);
     //SDL_GL_DeleteContext(glcontext); 
 
     return EXIT_SUCCESS;

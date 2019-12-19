@@ -1,6 +1,7 @@
 #include "glimac/glm.hpp"
 #include <cmath>
 #include <glm/glm.hpp> 
+#include <iostream>
 
 namespace glimac {
   
@@ -22,6 +23,7 @@ namespace glimac {
       glm::vec3 _frontVector; // Vecteur F
       glm::vec3 _leftVector; // Vecteur L
       glm::vec3 _upVector; // Vecteur U
+      float zoom = 0.1f;
       
       void computeDirectionVectors();
   };

@@ -3,10 +3,10 @@
 
 TP_template/CMakeFiles/TP_template_SDLtemplate.dir/SDLtemplate.cpp.o: /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/TP_template/SDLtemplate.cpp
 TP_template/CMakeFiles/TP_template_SDLtemplate.dir/SDLtemplate.cpp.o: /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/Cube.hpp
+TP_template/CMakeFiles/TP_template_SDLtemplate.dir/SDLtemplate.cpp.o: /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/Curseur.hpp
 TP_template/CMakeFiles/TP_template_SDLtemplate.dir/SDLtemplate.cpp.o: /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/FilePath.hpp
 TP_template/CMakeFiles/TP_template_SDLtemplate.dir/SDLtemplate.cpp.o: /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/FreeflyCamera.hpp
 TP_template/CMakeFiles/TP_template_SDLtemplate.dir/SDLtemplate.cpp.o: /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/Image.hpp
-TP_template/CMakeFiles/TP_template_SDLtemplate.dir/SDLtemplate.cpp.o: /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/Overlay.hpp
 TP_template/CMakeFiles/TP_template_SDLtemplate.dir/SDLtemplate.cpp.o: /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/Program.hpp
 TP_template/CMakeFiles/TP_template_SDLtemplate.dir/SDLtemplate.cpp.o: /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/SDLWindowManager.hpp
 TP_template/CMakeFiles/TP_template_SDLtemplate.dir/SDLtemplate.cpp.o: /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/Shader.hpp

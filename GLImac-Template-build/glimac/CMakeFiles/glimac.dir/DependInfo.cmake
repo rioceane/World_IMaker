@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/Cone.cpp" "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build/glimac/CMakeFiles/glimac.dir/src/Cone.cpp.o"
   "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/Cube.cpp" "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build/glimac/CMakeFiles/glimac.dir/src/Cube.cpp.o"
+  "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/Curseur.cpp" "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build/glimac/CMakeFiles/glimac.dir/src/Curseur.cpp.o"
   "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/FreeflyCamera.cpp" "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build/glimac/CMakeFiles/glimac.dir/src/FreeflyCamera.cpp.o"
   "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/Geometry.cpp" "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build/glimac/CMakeFiles/glimac.dir/src/Geometry.cpp.o"
   "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/Image.cpp" "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build/glimac/CMakeFiles/glimac.dir/src/Image.cpp.o"
@@ -13,7 +13,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/Program.cpp" "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build/glimac/CMakeFiles/glimac.dir/src/Program.cpp.o"
   "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/SDLWindowManager.cpp" "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build/glimac/CMakeFiles/glimac.dir/src/SDLWindowManager.cpp.o"
   "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/Shader.cpp" "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build/glimac/CMakeFiles/glimac.dir/src/Shader.cpp.o"
-  "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/Sphere.cpp" "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build/glimac/CMakeFiles/glimac.dir/src/Sphere.cpp.o"
   "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/tiny_obj_loader.cpp" "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build/glimac/CMakeFiles/glimac.dir/src/tiny_obj_loader.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
