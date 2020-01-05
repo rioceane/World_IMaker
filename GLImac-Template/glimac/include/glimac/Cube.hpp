@@ -17,8 +17,10 @@ namespace glimac
 			GLuint vao;
 			GLuint vbo;
 			GLuint ibo;
+			GLuint ibo_wireframe;
+			GLuint vbPositionsCubesID;
 			glm::vec3 position; 
-			glm::vec3 color; 
+			std::vector<glm::vec3> cubesPositions;
 	
 		public:
 			Cube();
@@ -27,7 +29,12 @@ namespace glimac
 			void createBuffer();
 			void deleteBuffers();
 			void drawCube();
+			void drawCubeCurseur();
 			glm::vec3 getPositionCube() const;
+			void updateGPU();
+			void addCube(glm::vec3 position);
+			int findCube(glm::vec3 position);
+			void removeCube(glm::vec3 position);
 	};
 	
 };
