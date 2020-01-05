@@ -1,6 +1,5 @@
 #include <glimac/Curseur.hpp>
 
-
 namespace glimac {
 
     Curseur::Curseur()
@@ -8,11 +7,10 @@ namespace glimac {
     {
         curseurCube.addCube(coord);
     }
-
     Curseur::~Curseur(){
     }
 
-    void Curseur::changeCoord(int axe, int increment){
+    void Curseur::changeCoord(int axe, float increment){
         curseurCube.removeCube(coord);
 
         if (axe == 0) {

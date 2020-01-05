@@ -1,13 +1,11 @@
 #pragma once
-
 #include <glm/glm.hpp>
 #include "glimac/Cube.hpp"
 #include <vector>
 
 
-
 namespace glimac {
-
+	
 class Curseur {
 
 	public:
@@ -16,8 +14,7 @@ class Curseur {
 	     
 	     Curseur();
 	     ~Curseur();
-	     void changeCoord(int axe, int increment);
+	     void changeCoord(int axe, float increment);
 	     void drawCurseur();
 	};
-    
 }

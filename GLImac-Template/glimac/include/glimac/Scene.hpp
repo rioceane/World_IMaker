@@ -8,10 +8,9 @@
 #include "imgui/imgui_impl_opengl3.h"
 #include <imgui/imgui_internal.h>
 
-#include <glm/glm.hpp> // la base de glm
+#include <glm/glm.hpp> 
 #include <iostream>
 #include <cstddef>
-
 
 namespace glimac
 {

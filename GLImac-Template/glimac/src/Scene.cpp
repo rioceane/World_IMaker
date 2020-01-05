@@ -1,23 +1,19 @@
 #include "glimac/Scene.hpp"    
 
 namespace glimac {
-
     // Constructeur
     Scene::Scene() {
         createScene();
         initializeImgui();
     }
-   
     //Destructeur
     Scene::~Scene()
     {
     }
 
     int Scene::createScene(){
-
 	    // couleur fenêtre
 	    glClearColor(200.0 / 255, 200.0 / 255, 255.0 / 255, 1);
-
 	    // Initialize glew for OpenGL3+ support
 	    GLenum glewInitError = glewInit();
 	    if(GLEW_OK != glewInitError) {
@@ -28,7 +24,6 @@ namespace glimac {
 	    std::cout << "OpenGL Version : " << glGetString(GL_VERSION) << std::endl;
 	    std::cout << "GLEW Version : " << glewGetString(GLEW_VERSION) << std::endl;
     }
-
 
 	void Scene::initializeImgui(){
 	    IMGUI_CHECKVERSION();

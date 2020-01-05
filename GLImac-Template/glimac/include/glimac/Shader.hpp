@@ -1,55 +1,49 @@
 #pragma once
-
 #include <GL/glew.h>
 #include <string>
-#include <glm/glm.hpp> //JUlES
-#include <unordered_map> //JUlES
+#include <glm/glm.hpp> 
+#include <unordered_map> 
 #include "FilePath.hpp"
 
 #define GLIMAC_SHADER_SRC(str) #str
 
 namespace glimac {
+	class Shader {
+	public:
+		Shader(GLenum type): m_nGLId(glCreateShader(type)) {
+		}
+		~Shader() {
+			glDeleteShader(m_nGLId);
+		}
 
-class Shader {
-public:
-	Shader(GLenum type): m_nGLId(glCreateShader(type)) {
-	}
+		Shader(Shader&& rvalue): m_nGLId(rvalue.m_nGLId) {
+			rvalue.m_nGLId = 0;
+		}
 
-	~Shader() {
-		glDeleteShader(m_nGLId);
-	}
+		Shader& operator =(Shader&& rvalue) {
+			m_nGLId = rvalue.m_nGLId;
+			rvalue.m_nGLId = 0;
+			return *this;
+		}
 
-	Shader(Shader&& rvalue): m_nGLId(rvalue.m_nGLId) {
-		rvalue.m_nGLId = 0;
-	}
+		GLuint getGLId() const {
+			return m_nGLId;
+		}
 
-	Shader& operator =(Shader&& rvalue) {
-		m_nGLId = rvalue.m_nGLId;
-		rvalue.m_nGLId = 0;
-		return *this;
-	}
+		void setSource(const char* src) {
+			glShaderSource(m_nGLId, 1, &src, 0);
+		}
 
-	GLuint getGLId() const {
-		return m_nGLId;
-	}
+		bool compile();
+		const std::string getInfoLog() const;
 
-	void setSource(const char* src) {
-		glShaderSource(m_nGLId, 1, &src, 0);
-	}
+	private:
+		Shader(const Shader&);
+		Shader& operator =(const Shader&);
 
-	bool compile();
+		GLuint m_nGLId;
+	};
 
-	const std::string getInfoLog() const;
-
-
-private:
-	Shader(const Shader&);
-	Shader& operator =(const Shader&);
-
-	GLuint m_nGLId;
-};
-
-// Load a shader (but does not compile it)
-Shader loadShader(GLenum type, const FilePath& filepath);
-
+	// Load a shader
+	Shader loadShader(GLenum type, const FilePath& filepath);
 }

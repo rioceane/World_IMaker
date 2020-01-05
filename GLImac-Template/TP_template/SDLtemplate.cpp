@@ -11,10 +11,10 @@
 #include "glimac/Curseur.hpp"
 #include <glm/gtc/matrix_transform.hpp>
 
-#include <glm/glm.hpp> // la base de glm
+#include <glm/glm.hpp> 
 #include <iostream>
 #include <cstddef>
-//#include "SDL.h"
+
 
 using namespace glimac;
 
@@ -31,10 +31,6 @@ int main(int argc, char** argv) {
     Program program = loadProgram(applicationPath.dirPath() + "shaders/3D.vs.glsl", applicationPath.dirPath() + "shaders/3D.fs.glsl");
     program.use();
 
-    /*********************************
-     * HERE SHOULD COME THE INITIALIZATION CODE
-     *********************************/
-
     //creation caméra
     FreeflyCamera camera;
 
@@ -42,7 +38,7 @@ int main(int argc, char** argv) {
     GLint uMVMatrix = glGetUniformLocation(program.getGLId(),"uMVMatrix");
     GLint uNormalMatrix = glGetUniformLocation(program.getGLId(),"uNormalMatrix");
 
-    //Lumière (cyrielle)
+    //Lumière 
     GLint uLumiereDirectionelle = glGetUniformLocation(program.getGLId(),"uLumieredirection");
     GLint uLumierePonctuelle = glGetUniformLocation(program.getGLId(),"uLumierepoint");
     GLint uCouleurcube = glGetUniformLocation(program.getGLId(),"uCouleur");
@@ -54,24 +50,19 @@ int main(int argc, char** argv) {
     cube.addCube(glm::vec3(-1.,0.,0.));
     cube.addCube(glm::vec3(1.,0.,0.));
 
-    //creation du curseur
+    //création du curseur
     Curseur curseur;
     int axe = 0;
 
     glEnable(GL_DEPTH_TEST);
 
     //Matrices de projection
-    glm::mat4 ProjMatrix = glm::perspective(
-        glm::radians(70.f),
-        800.f/600.f,
-        0.1f,
-        100.f);
+    glm::mat4 ProjMatrix = glm::perspective(glm::radians(70.f), 800.f/600.f, 0.1f, 100.f);
 
     //Lumières
     glm::vec3 LumiereDirectionelle=glm::normalize(glm::vec3(0.0,-0.3,-0.5));
     glm::vec3 LumierePonctuelle=glm::normalize(glm::vec3(-10,-10,-10));
     glm::vec3 CouleurCube=glm::vec3(1,1,1);
-
 
     // Application loop:
     bool done = false;
@@ -80,7 +71,7 @@ int main(int argc, char** argv) {
         SDL_Event e;
         while(windowManager.pollEvent(e)) {
             if(e.type == SDL_QUIT) {
-                done = true; // Leave the loop after this iteration
+                done = true; 
             }
 
             if(e.type == SDL_KEYDOWN){
@@ -102,7 +93,7 @@ int main(int argc, char** argv) {
                     default: break;
                 }
             }    
-
+            //Mouvement caméra
             if(e.type== SDL_MOUSEMOTION){
                 float speed = 0.1f;
                   camera.rotateFront( float(-e.motion.xrel) * speed);
@@ -117,24 +108,33 @@ int main(int argc, char** argv) {
             } else if (e.key.keysym.scancode == SDL_SCANCODE_W) { // Code W car qwerty
                 axe = 2; 
             }
-
+            //Se déplacer dans la scène
             if (e.key.keysym.scancode == SDL_SCANCODE_RIGHT) {
-                curseur.changeCoord(axe, 1);
+                curseur.changeCoord(axe, 0.5);
             } 
             else if (e.key.keysym.scancode == SDL_SCANCODE_LEFT){
-                curseur.changeCoord(axe, -1);
+                curseur.changeCoord(axe, -0.5);
             }
+            //Ajouter ou enlever un cube
             if (e.key.keysym.scancode == SDL_SCANCODE_RETURN) {
                 cube.addCube(curseur.coord);
             }
             else if (e.key.keysym.scancode == SDL_SCANCODE_BACKSPACE) {
                 cube.removeCube(curseur.coord);
             }
+            //Extrude ou dig 
+            if (e.key.keysym.scancode == SDL_SCANCODE_D) {
+
+                cube.digExtrude(curseur.coord, 0); //dig
+            }
+            else if (e.key.keysym.scancode == SDL_SCANCODE_E) {
+                cube.digExtrude(curseur.coord, 1); //extrude
+            }
         }
 
 
         /*********************************
-         * HERE SHOULD COME THE RENDERING CODE *
+         * RENDERING CODE *
          *********************************/
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
@@ -205,10 +205,8 @@ int main(int argc, char** argv) {
         glUniformMatrix4fv(uMVPMatrix,1,GL_FALSE,glm::value_ptr(ProjMatrix*MVMatrix));
         glUniformMatrix4fv(uMVMatrix,1,GL_FALSE,glm::value_ptr(MVMatrix));
         glUniformMatrix4fv(uNormalMatrix,1,GL_FALSE,glm::value_ptr(NormalMatrix));
-
         // dessiner le curseur
         curseur.drawCurseur();
-
         // dessiner le cube
         cube.drawCube();
 

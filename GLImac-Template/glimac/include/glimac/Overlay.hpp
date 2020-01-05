@@ -11,19 +11,16 @@
 
 namespace glimac
 {
-
     class Overlay
     {
         public:
-            // Constructor
             Overlay(){};
-            //Destructor
             ~Overlay();
+
             void beginFrame(SDL_Window* window) const;
-            void drawOverlay(int &action) const;
             void endFrame(SDL_Window* window) const;
             void clean(SDL_Window* window) const;
     };
 }
 
-#endif //GLIMAC_Overlay
+#endif 

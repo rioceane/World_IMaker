@@ -30,7 +30,6 @@ add_library(IMGUI STATIC ${IMGUI_SOURCES})
 set(ALL_LIBRARIES glimac ${SDL2_LIBRARIES} ${OPENGL_LIBRARIES} ${GLEW_LIBRARY} IMGUI)
 
 
-
 add_subdirectory(glimac)
 
 file(GLOB TP_DIRECTORIES "TP*")

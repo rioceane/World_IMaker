@@ -17,17 +17,14 @@
 // version 0.9.0: Initial
 //
 
-
 #include <cstdlib>
 #include <cstring>
 #include <cassert>
-
 #include <string>
 #include <vector>
 #include <map>
 #include <fstream>
 #include <sstream>
-
 #include "tiny_obj_loader.h"
 
 namespace tinyobj {

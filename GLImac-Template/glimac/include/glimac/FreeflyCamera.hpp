@@ -17,15 +17,14 @@ namespace glimac {
       glm::mat4 getViewMatrix() const;
 
     private:
-      glm::vec3 _position; // Position de la camera
-      float _fPhi; // Coord du vecteur sphérique F
-      float _fTheta; // Coord du vecteur sphérique F
-      glm::vec3 _frontVector; // Vecteur F
-      glm::vec3 _leftVector; // Vecteur L
-      glm::vec3 _upVector; // Vecteur U
+      glm::vec3 _position; // Position camera
+      float _fPhi; // Coordonnées du vecteur sphérique _frontVector
+      float _fTheta; // Coordonnées du vecteur sphérique _frontVector
+      glm::vec3 _frontVector; 
+      glm::vec3 _leftVector; 
+      glm::vec3 _upVector; 
       float zoom = 0.1f;
       
       void computeDirectionVectors();
   };
 }
-

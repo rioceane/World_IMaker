@@ -1,16 +1,12 @@
 #pragma once
-
 #include <vector>
 #include "glimac/common.hpp"
 #include "glimac/glm.hpp" 
 #include "glimac/Program.hpp"
 #include <GL/glew.h>
-//#include "glimac/FreeflyCamera.hpp"
-
 
 namespace glimac
 {
-
 	class Cube
 	{
 		protected:
@@ -30,12 +26,10 @@ namespace glimac
 			void deleteBuffers();
 			void drawCube();
 			void drawCubeCurseur();
-			glm::vec3 getPositionCube() const;
 			void updateGPU();
 			void addCube(glm::vec3 position);
 			int findCube(glm::vec3 position);
 			void removeCube(glm::vec3 position);
+			int digExtrude(glm::vec3 coord, bool digVSextrude);
 	};
-	
 };
-
