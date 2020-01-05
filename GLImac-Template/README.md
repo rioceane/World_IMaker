@@ -68,3 +68,34 @@ Make sure you're still in your build folder and :
 ```
 
 ## Guide of the editor
+
+Camera :
+	To rotate in every sens the camera, deplace your computer mouse on the window in the wanted direction.
+	If you pressed :
+		Z => You have a forward view
+		S => You have a backward view
+		G => You have a left view
+		D => You have a right view
+
+Cursor :
+	To move the cursor on the x axe :
+		1. Pressed the X keyboard. 
+		2. To go left, pressed the keyboard left arrow.
+		3. To go right, pressed the keyboard right arrow.
+	To move the cursor on the y axe :
+		1. Pressed the Y keyboard. 
+		2. To go up, pressed the keyboard left arrow.
+		3. To go down, pressed the keyboard right arrow.
+	To move the cursor on the z axe :
+		1. Pressed the Z keyboard. 
+		2. To go front, pressed the keyboard left arrow.
+		3. To go back, pressed the keyboard right arrow.
+
+Cube :
+	To add a cube, pressed the RETURN keyboard.
+	To remove a cube, pressed the BACKSPACE keyboard.
+	To dig a column, pressed the D keyboard.
+	To extrude a column, pressed th E keyboard.
+
+Color :
+	To modify the color, click on the color of your choice in the menu (in the left of the window).

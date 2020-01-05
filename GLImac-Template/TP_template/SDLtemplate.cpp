@@ -108,7 +108,7 @@ int main(int argc, char** argv) {
             } else if (e.key.keysym.scancode == SDL_SCANCODE_W) { // Code W car qwerty
                 axe = 2; 
             }
-            //Se déplacer dans la scène
+            //Déplacer le curseur dans la scène
             if (e.key.keysym.scancode == SDL_SCANCODE_RIGHT) {
                 curseur.changeCoord(axe, 0.5);
             } 
@@ -122,7 +122,7 @@ int main(int argc, char** argv) {
             else if (e.key.keysym.scancode == SDL_SCANCODE_BACKSPACE) {
                 cube.removeCube(curseur.coord);
             }
-            //Extrude ou dig 
+            //Extrude ou dig une colonne 
             if (e.key.keysym.scancode == SDL_SCANCODE_D) {
 
                 cube.digExtrude(curseur.coord, 0); //dig
@@ -133,9 +133,9 @@ int main(int argc, char** argv) {
         }
 
 
-        /*********************************
+        /********************
          * RENDERING CODE *
-         *********************************/
+         ********************/
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
         // couleur cube + lumière 
@@ -210,7 +210,6 @@ int main(int argc, char** argv) {
         // dessiner le cube
         cube.drawCube();
 
-        // Update the display
         windowManager.swapBuffers();
     }
 
