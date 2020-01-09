@@ -11,7 +11,8 @@ set( CMAKE_EXPORT_COMPILE_COMMANDS ON )
 find_package(SDL2 REQUIRED)
 find_package(OpenGL REQUIRED)
 find_package(GLEW REQUIRED)
-find_package(EIGEN3 REQUIRED)
+#find_package(EIGEN3 REQUIRED)
+
 
 if(APPLE)
 	include_directories(usr/local/include)

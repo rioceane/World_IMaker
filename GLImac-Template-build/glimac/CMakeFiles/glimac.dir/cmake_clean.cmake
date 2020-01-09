@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/glimac.dir/src/Imagev2.cpp.o"
   "CMakeFiles/glimac.dir/src/Overlay.cpp.o"
   "CMakeFiles/glimac.dir/src/Program.cpp.o"
+  "CMakeFiles/glimac.dir/src/RadialBasisFunction.cpp.o"
   "CMakeFiles/glimac.dir/src/SDLWindowManager.cpp.o"
   "CMakeFiles/glimac.dir/src/Scene.cpp.o"
   "CMakeFiles/glimac.dir/src/Shader.cpp.o"

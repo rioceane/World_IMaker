@@ -112,15 +112,5 @@ Lights :
 
 	You can also add both lights at the same time and adjust their position as you wish.
 
-
-
-
-
-
-
-
-
-
-
-
-
+Procedural Generation of a scene :
+	Press SPACE

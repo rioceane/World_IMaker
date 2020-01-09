@@ -17,16 +17,11 @@ uniform mat4 uNormalMatrix;
 //cyrielle
 uniform mat4 uModelMatrix;
 
-
-
-
-
 void main() {
 	//calculs des valeurs de sortie
 	vPosition = vec3(uMVMatrix*vec4(aVertexPosition, 1));
 	vNormale = vec3(uNormalMatrix*vec4(aVertexNormal, 0));
 	vtexCoords = aTexCoord;
-
 	//calcul de la position projetée
     gl_Position = uMVPMatrix * vec4(aPositionSommet + aVertexPosition, 1);
 }

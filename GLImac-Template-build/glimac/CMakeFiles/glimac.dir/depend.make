@@ -768,6 +768,9 @@ glimac/CMakeFiles/glimac.dir/src/Program.cpp.o: /home/oceane/Documents/PROJET_WO
 glimac/CMakeFiles/glimac.dir/src/Program.cpp.o: /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include/glm/vec4.hpp
 glimac/CMakeFiles/glimac.dir/src/Program.cpp.o: /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include/glm/vector_relational.hpp
 
+glimac/CMakeFiles/glimac.dir/src/RadialBasisFunction.cpp.o: /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/RadialBasisFunction.hpp
+glimac/CMakeFiles/glimac.dir/src/RadialBasisFunction.cpp.o: /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/RadialBasisFunction.cpp
+
 glimac/CMakeFiles/glimac.dir/src/SDLWindowManager.cpp.o: /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/SDLWindowManager.hpp
 glimac/CMakeFiles/glimac.dir/src/SDLWindowManager.cpp.o: /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/glm.hpp
 glimac/CMakeFiles/glimac.dir/src/SDLWindowManager.cpp.o: /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/SDLWindowManager.cpp
@@ -907,8 +910,13 @@ glimac/CMakeFiles/glimac.dir/src/SDLWindowManager.cpp.o: /usr/include/SDL2/SDL_v
 glimac/CMakeFiles/glimac.dir/src/SDLWindowManager.cpp.o: /usr/include/SDL2/begin_code.h
 glimac/CMakeFiles/glimac.dir/src/SDLWindowManager.cpp.o: /usr/include/SDL2/close_code.h
 
+glimac/CMakeFiles/glimac.dir/src/Scene.cpp.o: /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/Cube.hpp
+glimac/CMakeFiles/glimac.dir/src/Scene.cpp.o: /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/FilePath.hpp
+glimac/CMakeFiles/glimac.dir/src/Scene.cpp.o: /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/Program.hpp
+glimac/CMakeFiles/glimac.dir/src/Scene.cpp.o: /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/RadialBasisFunction.hpp
 glimac/CMakeFiles/glimac.dir/src/Scene.cpp.o: /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/SDLWindowManager.hpp
 glimac/CMakeFiles/glimac.dir/src/Scene.cpp.o: /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/Scene.hpp
+glimac/CMakeFiles/glimac.dir/src/Scene.cpp.o: /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/Shader.hpp
 glimac/CMakeFiles/glimac.dir/src/Scene.cpp.o: /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/common.hpp
 glimac/CMakeFiles/glimac.dir/src/Scene.cpp.o: /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/glm.hpp
 glimac/CMakeFiles/glimac.dir/src/Scene.cpp.o: /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/Scene.cpp

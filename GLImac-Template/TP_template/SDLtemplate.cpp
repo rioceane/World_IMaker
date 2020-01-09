@@ -9,8 +9,9 @@
 #include "glimac/Scene.hpp"
 #include "glimac/common.hpp"
 #include "glimac/Curseur.hpp"
-#include "glimac/RadialBasisFunctions.hpp"
+#include "glimac/RadialBasisFunction.hpp"
 #include <glm/gtc/matrix_transform.hpp>
+#include <eigen3/Eigen/Dense>
 
 #include <glm/glm.hpp> 
 #include <iostream>
@@ -133,6 +134,11 @@ int main(int argc, char** argv) {
             }
             else if (e.key.keysym.scancode == SDL_SCANCODE_E) {
                 cube.digExtrude(curseur.coord, 1); //extrude
+            }
+
+            //Charger le RBF
+            if (e.key.keysym.scancode == SDL_SCANCODE_SPACE) {
+                scene.RadialBasisFunctionScene(&cube);
             }
         }
 
