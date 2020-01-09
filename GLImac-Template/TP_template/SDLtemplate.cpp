@@ -45,9 +45,6 @@ int main(int argc, char** argv) {
     GLint uLumierePonctuelle = glGetUniformLocation(program.getGLId(),"uLumierepoint");
     GLint uCouleurcube = glGetUniformLocation(program.getGLId(),"uCouleur");
 
-
-    Foo(10);
-    
     //création cube
     Cube cube;
     // Etat initial

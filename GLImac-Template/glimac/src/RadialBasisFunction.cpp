@@ -3,14 +3,17 @@
 
 namespace glimac {
 
-    float phi(const float a){return exp(-0.2*a*a);}
+    float radialFunction(const float a){return exp(-0.1*a*a);}
+    //{return exp(-0.1*a*a);} = gaussienne
+    //{return sqrt(1+(-0.1*a)(-0.1*a));} = multiquadratique
+    //{return (1/(1+(-0.1*a)(-0.1*a)));} = inverse quadratique
 
     int findValue(const int i, const int j, const Eigen::MatrixXf ptControl, const Eigen::VectorXf w){
         float value = 0;
         Eigen::VectorXf coordPoint(2);
         coordPoint << i, j;
         for (int index = 0; index < ptControl.rows(); index++){
-            value += w(index)*phi((coordPoint.transpose()-ptControl.row(index)).norm());
+            value += w(index)*radialFunction((coordPoint.transpose()-ptControl.row(index)).norm());
         }
         return round(value);
     }
@@ -19,7 +22,7 @@ namespace glimac {
         Eigen::MatrixXf Om = Eigen::MatrixXf::Zero(ptControl.rows(), ptControl.rows());
         for (int i = 0; i < Om.rows(); i++){
             for (int j = 0; j < Om.cols(); j++){
-                Om(i,j)= phi((ptControl.row(i)-ptControl.row(j)).norm());
+                Om(i,j)= radialFunction((ptControl.row(i)-ptControl.row(j)).norm());
             }
         }
         return Om.inverse() * value;
