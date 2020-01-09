@@ -21,52 +21,51 @@ namespace glimac {
                 //  | |v7---|-|v4
                 //  |/      |/
                 //  v2------v3
-
-    float _positionsSommets[] = {
-                // v0
-                 0.5,  0.5,  0.5,
-                // v1
-                -0.5,  0.5,  0.5,
-                // v2
-                -0.5, -0.5,  0.5,
-                // v3
-                 0.5, -0.5,  0.5,
-                // v4
-                 0.5, -0.5, -0.5,
-                // v5
-                 0.5,  0.5, -0.5,
-                // v6
-                -0.5,  0.5, -0.5,
-                // v7
-                -0.5, -0.5, -0.5,
+    
+    const glm::vec3 _positionsSommets[] = {
+        // Front v0,v1,v2,v3
+        glm::vec3(0.5, 0.5, 0.5), glm::vec3(-0.5, 0.5, 0.5), glm::vec3(-0.5, -0.5, 0.5), glm::vec3(0.5, -0.5, 0.5),
+        // Right v0,v3,v4,v5
+        glm::vec3(0.5, 0.5, 0.5), glm::vec3(0.5, -0.5, 0.5), glm::vec3(0.5, -0.5, -0.5), glm::vec3(0.5, 0.5, -0.5),
+        // Top v0,v5,v6,v5  
+        glm::vec3(0.5, 0.5, 0.5), glm::vec3(0.5, 0.5, -0.5), glm::vec3(-0.5, 0.5, -0.5), glm::vec3(-0.5, 0.5, 0.5), 
+        // Left v1,v6,v7,v2 
+        glm::vec3(-0.5, 0.5, 0.5), glm::vec3(-0.5, 0.5, -0.5), glm::vec3(-0.5, -0.5, -0.5), glm::vec3(-0.5, -0.5, 0.5),  
+        // Bottom v7,v4,v3,v2
+        glm::vec3(-0.5, -0.5, -0.5), glm::vec3(0.5, -0.5, -0.5), glm::vec3(0.5, -0.5, 0.5), glm::vec3(-0.5, -0.5, 0.5), 
+        // Back v4,v7,v6,v5 
+        glm::vec3(0.5, -0.5, -0.5), glm::vec3(-0.5, -0.5, -0.5), glm::vec3(-0.5, 0.5, -0.5), glm::vec3(0.5, 0.5, -0.5)
+    };
+   
+    const glm::vec3 _normals[] = {
+        glm::vec3(0, 0, 1), glm::vec3(0, 0, 1), glm::vec3(0, 0, 1), glm::vec3(0, 0, 1),
+        glm::vec3(1, 0, 0), glm::vec3(1, 0, 0), glm::vec3(1, 0, 0), glm::vec3(1, 0, 0),
+        glm::vec3(0, 1, 0), glm::vec3(0, 1, 0), glm::vec3(0, 1, 0), glm::vec3(0, 1, 0),
+        glm::vec3(-1, 0, 0), glm::vec3(-1, 0, 0), glm::vec3(-1, 0, 0), glm::vec3(-1, 0, 0),
+        glm::vec3(0,-1, 0), glm::vec3(0,-1, 0), glm::vec3(0,-1, 0), glm::vec3(0,-1, 0),
+        glm::vec3(0, 0,-1), glm::vec3(0, 0,-1), glm::vec3(0, 0,-1), glm::vec3(0, 0,-1)
     };
 
-    int _indexsSommets[] = {
-                // face de devant
-                0, 1, 2,  0, 2, 3,
-                // face de derrière
-                4, 7, 6,  4, 6, 5,
-                // face de gauche
-                1, 6, 7,  1, 7, 2,
-                // face de droite
-                0, 3, 4,  0, 4, 5,
-                // face de dessous
-                2, 7, 4,  2, 4, 3,
-                // face de dessus
-                0, 5, 6,  0, 6, 1
-            };
+    const unsigned int _indexsSommets[] = {
+        0, 1, 2,   2, 3, 0,       // front
+        4, 5, 6,   6, 7, 4,       // right
+        8, 9, 10,  10,11,8,       // top
+        12,13,14,  14,15,12,      // left
+        16,17,18,  18,19,16,      // bottom
+        20,21,22,  22,23,20       // back
+    };
 
     int _indexsSommetsWireframe[] = {
         // face de devant
         0, 1,   1, 2,   2, 3,   3, 0,
         // face de gauche
-        1, 6,   6, 7,   7, 2,
+        1, 10,   10, 16,   16, 2,
         // face de droite
-        0, 5,   5, 4,   4, 3,
+        0, 7,   7, 6,   6, 3,
         // face de dessous
-        7, 4,
+        16, 6,
         // face de dessus
-        6, 5,
+        10, 7,
     };
 
     void Cube::createBuffer()
@@ -76,6 +75,15 @@ namespace glimac {
         glBindBuffer(GL_ARRAY_BUFFER, vbo);
         glBufferData(GL_ARRAY_BUFFER, sizeof(_positionsSommets), _positionsSommets, GL_STATIC_DRAW);
         // on unbind par sécurité
+        glBindBuffer(GL_ARRAY_BUFFER, 0);
+
+        GLuint vboNormales;
+        glGenBuffers(1,&vboNormales);
+
+        glBindBuffer(GL_ARRAY_BUFFER, vboNormales);
+
+        glBufferData(GL_ARRAY_BUFFER, sizeof(_normals), _normals, GL_STATIC_DRAW);
+        // on unbind, ce n'est pas nécessaire mais c'est par sécurité, ça rend les choses plus faciles à débuguer
         glBindBuffer(GL_ARRAY_BUFFER, 0);
 
         // IBO
@@ -112,6 +120,13 @@ namespace glimac {
         // C'est pour dire à OpenGL qu'il ne doit pas avancer dans le buffer à chaque vertex, mais seulement à chaque nouveau cube qu'il commence à dessiner
         glVertexAttribDivisor(3, 1);
         // On unbind
+        glBindBuffer(GL_ARRAY_BUFFER, 0);
+        // Normales
+        glBindBuffer(GL_ARRAY_BUFFER, vboNormales);
+        glEnableVertexAttribArray(1); 
+        // On dit à OpenGL que l'attribut 0 contient trois float
+        glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), 0);
+        // On unbind par sécurité
         glBindBuffer(GL_ARRAY_BUFFER, 0);
         glBindVertexArray(0);
     }

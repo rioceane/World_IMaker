@@ -9,6 +9,7 @@
 #include "glimac/Scene.hpp"
 #include "glimac/common.hpp"
 #include "glimac/Curseur.hpp"
+#include "glimac/RadialBasisFunctions.hpp"
 #include <glm/gtc/matrix_transform.hpp>
 
 #include <glm/glm.hpp> 
@@ -43,6 +44,9 @@ int main(int argc, char** argv) {
     GLint uLumierePonctuelle = glGetUniformLocation(program.getGLId(),"uLumierepoint");
     GLint uCouleurcube = glGetUniformLocation(program.getGLId(),"uCouleur");
 
+
+    Foo(10);
+    
     //création cube
     Cube cube;
     // Etat initial
@@ -138,18 +142,33 @@ int main(int argc, char** argv) {
          ********************/
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
+        // changement matrice (caméra)
+        glm::mat4 MVMatrix = camera.getViewMatrix();
+        glm::mat4 NormalMatrix = glm::transpose(glm::inverse(MVMatrix));
+        glUniformMatrix4fv(uMVPMatrix,1,GL_FALSE,glm::value_ptr(ProjMatrix*MVMatrix));
+        glUniformMatrix4fv(uMVMatrix,1,GL_FALSE,glm::value_ptr(MVMatrix));
+        glUniformMatrix4fv(uNormalMatrix,1,GL_FALSE,glm::value_ptr(NormalMatrix));
+
+        // dessiner le curseur
+        curseur.drawCurseur();
+
+        // dessiner le cube
+        cube.drawCube();
+
         // couleur cube + lumière 
         glUniform3f(uCouleurcube,CouleurCube.x,CouleurCube.y,CouleurCube.z);
+        glUniform3f(uLumiereDirectionelle,LumiereDirectionelle.x,LumiereDirectionelle.y,LumiereDirectionelle.z);
+        glUniform3f(uLumierePonctuelle,LumierePonctuelle.x,LumierePonctuelle.y,LumierePonctuelle.z);
         
+        //import librarie
         ImGui_ImplOpenGL3_NewFrame();
         ImGui_ImplSDL2_NewFrame(windowManager.window);
         ImGui::NewFrame();
 
         ImGui::Begin("Hello");
         ImGui::Text("Bonjour et bienvenue");
-        ImGui::SliderFloat3("Direction lumière", (float*)&LumiereDirectionelle, -1, 1);
-        ImGui::SliderFloat3("Point lumière", (float*)&LumierePonctuelle, -10, 10);
-        ImGui::Text("Color button only:");
+        ImGui::SliderFloat3("Ajuster la lumière directionnelle", (float*)&LumiereDirectionelle, -1, 1);
+        ImGui::SliderFloat3("Ajuster la lumière ponctuelle", (float*)&LumierePonctuelle, -10, 10);
 
         if (ImGui::Button("Ambiance de jour")){
             LumiereDirectionelle=glm::vec3(0.0,-0.3,-0.5);
@@ -159,13 +178,16 @@ int main(int argc, char** argv) {
 
         if (ImGui::Button("Ambiance de nuit")){
             LumiereDirectionelle=glm::vec3(0.0,0.0,0.0);
-            LumierePonctuelle=glm::vec3(1,-0.2,1);
+            LumierePonctuelle=glm::vec3(-7.0,-0.5,-1);
             glClearColor(15.0 /255, 15.0 / 255, 15.0 / 255, 1);
         }
         if (ImGui::Button("Supprimer les lumières")){
             LumiereDirectionelle=glm::vec3(0.0,0.0,0.0);
             LumierePonctuelle=glm::vec3(0,0,0);
         }
+
+        ImGui::Text("Choisissez la couleur des cubes :");
+
         if (ImGui::Button("Bleu")){
             CouleurCube=glm::vec3(15.0/255, 100.0/255, 232.0/255);
         }
@@ -192,23 +214,8 @@ int main(int argc, char** argv) {
         }
     
         ImGui::End();
-
-        glUniform3f(uLumiereDirectionelle,LumiereDirectionelle.x,LumiereDirectionelle.y,LumiereDirectionelle.z);
-        glUniform3f(uLumierePonctuelle,LumierePonctuelle.x,LumierePonctuelle.y,LumierePonctuelle.z);
-        
         ImGui::Render();
         ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
-
-        // changement matrice (caméra)
-        glm::mat4 MVMatrix = camera.getViewMatrix();
-        glm::mat4 NormalMatrix = glm::transpose(glm::inverse(MVMatrix));
-        glUniformMatrix4fv(uMVPMatrix,1,GL_FALSE,glm::value_ptr(ProjMatrix*MVMatrix));
-        glUniformMatrix4fv(uMVMatrix,1,GL_FALSE,glm::value_ptr(MVMatrix));
-        glUniformMatrix4fv(uNormalMatrix,1,GL_FALSE,glm::value_ptr(NormalMatrix));
-        // dessiner le curseur
-        curseur.drawCurseur();
-        // dessiner le cube
-        cube.drawCube();
 
         windowManager.swapBuffers();
     }

@@ -63,9 +63,14 @@ cmake ../GLImac-Template
 make
 ```
 Make sure you're still in your build folder and :
-```bash
-	./TP_template/TP_template_SDLtemplate
-```
+IF YOU ARE ONE APPLE:
+	```bash
+		./TP_template/TP_template_SDLtemplate
+	```
+ELSE:
+	```bash
+		./TP_template/TP_template_SDLtemplate
+	```
 
 ## Guide of the editor
 
@@ -98,4 +103,24 @@ Cube :
 	To extrude a column, pressed th E keyboard.
 
 Color :
-	To modify the color, click on the color of your choice in the menu (in the left of the window).
+	To modify the color, click on the color of your choice in the menu (on the left of the window).
+
+Lights : 
+	To add daylight, you can click on "Ambience de jour", this will generate a light with default values. You can fix the position of your light by adjusting the corresponding x, y, z position.
+
+	To add nightlight, you can click on "Ambiance de nuit", this will generate a light with default values. You can fix the position of your light by adjusting the corresponding x, y, z position.
+
+	You can also add both lights at the same time and adjust their position as you wish.
+
+
+
+
+
+
+
+
+
+
+
+
+
