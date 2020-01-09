@@ -99,3 +99,6 @@ Cube :
 
 Color :
 	To modify the color, click on the color of your choice in the menu (in the left of the window).
+
+Procedural Generation of a scene :
+	Press SPACE

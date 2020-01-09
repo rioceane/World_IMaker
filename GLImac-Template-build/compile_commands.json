@@ -1,0 +1,97 @@
+[
+{
+  "directory": "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build",
+  "command": "/usr/bin/c++   -I/usr/include/SDL2 -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include/imgui    -std=c++11 -o CMakeFiles/IMGUI.dir/third-party/include/imgui/imgui.cpp.o -c /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include/imgui/imgui.cpp",
+  "file": "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include/imgui/imgui.cpp"
+},
+{
+  "directory": "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build",
+  "command": "/usr/bin/c++   -I/usr/include/SDL2 -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include/imgui    -std=c++11 -o CMakeFiles/IMGUI.dir/third-party/include/imgui/imgui_draw.cpp.o -c /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include/imgui/imgui_draw.cpp",
+  "file": "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include/imgui/imgui_draw.cpp"
+},
+{
+  "directory": "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build",
+  "command": "/usr/bin/c++   -I/usr/include/SDL2 -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include/imgui    -std=c++11 -o CMakeFiles/IMGUI.dir/third-party/include/imgui/imgui_impl_opengl3.cpp.o -c /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include/imgui/imgui_impl_opengl3.cpp",
+  "file": "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include/imgui/imgui_impl_opengl3.cpp"
+},
+{
+  "directory": "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build",
+  "command": "/usr/bin/c++   -I/usr/include/SDL2 -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include/imgui    -std=c++11 -o CMakeFiles/IMGUI.dir/third-party/include/imgui/imgui_impl_sdl.cpp.o -c /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include/imgui/imgui_impl_sdl.cpp",
+  "file": "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include/imgui/imgui_impl_sdl.cpp"
+},
+{
+  "directory": "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build",
+  "command": "/usr/bin/c++   -I/usr/include/SDL2 -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include/imgui    -std=c++11 -o CMakeFiles/IMGUI.dir/third-party/include/imgui/imgui_widgets.cpp.o -c /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include/imgui/imgui_widgets.cpp",
+  "file": "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include/imgui/imgui_widgets.cpp"
+},
+{
+  "directory": "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build/glimac",
+  "command": "/usr/bin/c++   -I/usr/include/SDL2 -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include/imgui    -std=c++11 -o CMakeFiles/glimac.dir/src/Cube.cpp.o -c /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/Cube.cpp",
+  "file": "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/Cube.cpp"
+},
+{
+  "directory": "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build/glimac",
+  "command": "/usr/bin/c++   -I/usr/include/SDL2 -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include/imgui    -std=c++11 -o CMakeFiles/glimac.dir/src/Curseur.cpp.o -c /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/Curseur.cpp",
+  "file": "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/Curseur.cpp"
+},
+{
+  "directory": "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build/glimac",
+  "command": "/usr/bin/c++   -I/usr/include/SDL2 -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include/imgui    -std=c++11 -o CMakeFiles/glimac.dir/src/FreeflyCamera.cpp.o -c /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/FreeflyCamera.cpp",
+  "file": "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/FreeflyCamera.cpp"
+},
+{
+  "directory": "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build/glimac",
+  "command": "/usr/bin/c++   -I/usr/include/SDL2 -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include/imgui    -std=c++11 -o CMakeFiles/glimac.dir/src/Geometry.cpp.o -c /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/Geometry.cpp",
+  "file": "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/Geometry.cpp"
+},
+{
+  "directory": "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build/glimac",
+  "command": "/usr/bin/c++   -I/usr/include/SDL2 -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include/imgui    -std=c++11 -o CMakeFiles/glimac.dir/src/Image.cpp.o -c /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/Image.cpp",
+  "file": "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/Image.cpp"
+},
+{
+  "directory": "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build/glimac",
+  "command": "/usr/bin/c++   -I/usr/include/SDL2 -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include/imgui    -std=c++11 -o CMakeFiles/glimac.dir/src/Imagev2.cpp.o -c /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/Imagev2.cpp",
+  "file": "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/Imagev2.cpp"
+},
+{
+  "directory": "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build/glimac",
+  "command": "/usr/bin/c++   -I/usr/include/SDL2 -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include/imgui    -std=c++11 -o CMakeFiles/glimac.dir/src/Overlay.cpp.o -c /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/Overlay.cpp",
+  "file": "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/Overlay.cpp"
+},
+{
+  "directory": "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build/glimac",
+  "command": "/usr/bin/c++   -I/usr/include/SDL2 -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include/imgui    -std=c++11 -o CMakeFiles/glimac.dir/src/Program.cpp.o -c /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/Program.cpp",
+  "file": "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/Program.cpp"
+},
+{
+  "directory": "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build/glimac",
+  "command": "/usr/bin/c++   -I/usr/include/SDL2 -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include/imgui    -std=c++11 -o CMakeFiles/glimac.dir/src/RadialBasisFunction.cpp.o -c /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/RadialBasisFunction.cpp",
+  "file": "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/RadialBasisFunction.cpp"
+},
+{
+  "directory": "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build/glimac",
+  "command": "/usr/bin/c++   -I/usr/include/SDL2 -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include/imgui    -std=c++11 -o CMakeFiles/glimac.dir/src/SDLWindowManager.cpp.o -c /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/SDLWindowManager.cpp",
+  "file": "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/SDLWindowManager.cpp"
+},
+{
+  "directory": "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build/glimac",
+  "command": "/usr/bin/c++   -I/usr/include/SDL2 -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include/imgui    -std=c++11 -o CMakeFiles/glimac.dir/src/Scene.cpp.o -c /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/Scene.cpp",
+  "file": "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/Scene.cpp"
+},
+{
+  "directory": "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build/glimac",
+  "command": "/usr/bin/c++   -I/usr/include/SDL2 -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include/imgui    -std=c++11 -o CMakeFiles/glimac.dir/src/Shader.cpp.o -c /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/Shader.cpp",
+  "file": "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/Shader.cpp"
+},
+{
+  "directory": "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build/glimac",
+  "command": "/usr/bin/c++   -I/usr/include/SDL2 -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include/imgui    -std=c++11 -o CMakeFiles/glimac.dir/src/tiny_obj_loader.cpp.o -c /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/tiny_obj_loader.cpp",
+  "file": "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/tiny_obj_loader.cpp"
+},
+{
+  "directory": "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build/TP_template",
+  "command": "/usr/bin/c++   -I/usr/include/SDL2 -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include -I/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/third-party/include/imgui    -std=c++11 -o CMakeFiles/TP_template_SDLtemplate.dir/SDLtemplate.cpp.o -c /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/TP_template/SDLtemplate.cpp",
+  "file": "/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/TP_template/SDLtemplate.cpp"
+}
+]

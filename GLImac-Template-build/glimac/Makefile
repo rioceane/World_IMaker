@@ -341,6 +341,33 @@ src/Program.cpp.s:
 	cd /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build && $(MAKE) -f glimac/CMakeFiles/glimac.dir/build.make glimac/CMakeFiles/glimac.dir/src/Program.cpp.s
 .PHONY : src/Program.cpp.s
 
+src/RadialBasisFunction.o: src/RadialBasisFunction.cpp.o
+
+.PHONY : src/RadialBasisFunction.o
+
+# target to build an object file
+src/RadialBasisFunction.cpp.o:
+	cd /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build && $(MAKE) -f glimac/CMakeFiles/glimac.dir/build.make glimac/CMakeFiles/glimac.dir/src/RadialBasisFunction.cpp.o
+.PHONY : src/RadialBasisFunction.cpp.o
+
+src/RadialBasisFunction.i: src/RadialBasisFunction.cpp.i
+
+.PHONY : src/RadialBasisFunction.i
+
+# target to preprocess a source file
+src/RadialBasisFunction.cpp.i:
+	cd /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build && $(MAKE) -f glimac/CMakeFiles/glimac.dir/build.make glimac/CMakeFiles/glimac.dir/src/RadialBasisFunction.cpp.i
+.PHONY : src/RadialBasisFunction.cpp.i
+
+src/RadialBasisFunction.s: src/RadialBasisFunction.cpp.s
+
+.PHONY : src/RadialBasisFunction.s
+
+# target to generate assembly for a file
+src/RadialBasisFunction.cpp.s:
+	cd /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template-build && $(MAKE) -f glimac/CMakeFiles/glimac.dir/build.make glimac/CMakeFiles/glimac.dir/src/RadialBasisFunction.cpp.s
+.PHONY : src/RadialBasisFunction.cpp.s
+
 src/SDLWindowManager.o: src/SDLWindowManager.cpp.o
 
 .PHONY : src/SDLWindowManager.o
@@ -482,6 +509,9 @@ help:
 	@echo "... src/Program.o"
 	@echo "... src/Program.i"
 	@echo "... src/Program.s"
+	@echo "... src/RadialBasisFunction.o"
+	@echo "... src/RadialBasisFunction.i"
+	@echo "... src/RadialBasisFunction.s"
 	@echo "... src/SDLWindowManager.o"
 	@echo "... src/SDLWindowManager.i"
 	@echo "... src/SDLWindowManager.s"

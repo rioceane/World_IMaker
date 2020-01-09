@@ -39,4 +39,23 @@ namespace glimac {
 	    // Setup Dear ImGui style
 	    ImGui::StyleColorsDark();
 	}
+
+	void Scene::RadialBasisFunctionScene(Cube* cube){
+	 	const int nbPoint = 1;
+        Eigen::MatrixXd world = Eigen::MatrixXd::Zero(21,21);
+        Eigen::MatrixXf ptControl(nbPoint, 2);
+        ptControl << 0,0;
+        Eigen::VectorXf value(nbPoint);
+        value << 15;
+
+        world = generateWorld(ptControl, value);
+
+        for (int x = 0; x < 11; x++){
+            for (int z = 0; z < 11; z++){
+                for (int y = -10; y < world(x,z); y++){
+                    cube->addCube(glm::vec3(x-(10/2),y,z-(10/2)));
+                }
+            }
+        }
+	}
 }

@@ -94,6 +94,14 @@ Shader.hpp
 FilePath.hpp
 /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/FilePath.hpp
 
+/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/RadialBasisFunction.hpp
+vector
+-
+iostream
+-
+eigen3/Eigen/Dense
+-
+
 /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/SDLWindowManager.hpp
 cstdint
 -
@@ -111,6 +119,10 @@ glimac/glm.hpp
 /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/glimac/glm.hpp
 glimac/common.hpp
 /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/glimac/common.hpp
+Cube.hpp
+/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/Cube.hpp
+glimac/RadialBasisFunction.hpp
+/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/glimac/RadialBasisFunction.hpp
 imgui/imgui.h
 /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/imgui/imgui.h
 imgui/imgui_impl_sdl.h
@@ -118,6 +130,8 @@ imgui/imgui_impl_sdl.h
 imgui/imgui_impl_opengl3.h
 /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/include/glimac/imgui/imgui_impl_opengl3.h
 imgui/imgui_internal.h
+-
+eigen3/Eigen/Dense
 -
 glm/glm.hpp
 -
@@ -215,6 +229,10 @@ glimac/Program.hpp
 /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/glimac/Program.hpp
 stdexcept
 -
+
+/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/RadialBasisFunction.cpp
+glimac/RadialBasisFunction.hpp
+/home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/glimac/RadialBasisFunction.hpp
 
 /home/oceane/Documents/PROJET_WORLD_IMAC/World_IMaker/GLImac-Template/glimac/src/SDLWindowManager.cpp
 glimac/SDLWindowManager.hpp
